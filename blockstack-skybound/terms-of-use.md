@@ -6,24 +6,44 @@ title: Terms of use | Block Stack Skybound
 
 <div class="prose">
 
-> **Draft, not for publication.** The information below contains unverified details and must be completed and reviewed before release.
+**Effective date:** November 10, 2026
 
-Complete the bracketed terms and obtain legal review for each launch market before publication. Effective date: [DATE].
+## About these terms
 
-## Agreement and use
+These terms govern your use of Block Stack Skybound, provided by the team behind the game ("we", "us" or "our"). If you are a minor, ask your parent or guardian for permission to play where required. If you have questions, visit our [contact page](contact.html).
 
-These terms govern your use of Block Stack Skybound, provided by [LEGAL OPERATOR NAME AND ADDRESS] ("we"). [INSERT APPROPRIATE ACCEPTANCE MECHANISM AND AGE/PARENTAL CONSENT TERMS AFTER DETERMINING THE INTENDED AUDIENCE AND APPLICABLE LAW.] You may use the game for personal entertainment and must comply with applicable law. Do not interfere with the game or others' rights.
+## Playing the game
 
-## Game, advertising and virtual items
+We give you a limited, personal, non-exclusive, non-transferable permission to use the game for your own entertainment, subject to these terms and applicable law. You must not use the game unlawfully, interfere with its operation, or infringe the rights of others. We and our licensors retain rights in the game and its content; these terms do not transfer ownership to you.
 
-The game includes advertising. You may choose to watch an available rewarded ad for the displayed in-game reward. Rewards may not be granted if the ad is unavailable or not completed. Rubies are game-only units used to unlock themes; they are not money and cannot be redeemed for cash or transferred through the current game. [VERIFY BUSINESS PRACTICES BEFORE PUBLICATION.] Game progress and items are stored on the device and may be lost if data is cleared, the app is removed or a device changes. [VERIFY BACKUP AND RESTORATION.] We may update game features; [ADD ANY NOTICE AND USER REMEDIES REQUIRED BY LOCAL LAW].
+## Ads, rewards and rubies
 
-## Rights and third parties
+The mobile game contains ads. You can choose to watch an available rewarded ad for the reward shown in the game. An ad or reward may be unavailable, and a reward may not be granted if the ad is not completed or the advertising service does not report completion.
 
-We grant you a limited, personal right to use the game, subject to these terms and applicable law. We and our licensors retain rights in the game and its content. Ads and third-party services are subject to their providers' terms and privacy practices. Our privacy policy is at [PUBLIC PRIVACY POLICY URL].
+Rubies are in-game units used to unlock themes. In the current game, they have no cash value and cannot be redeemed for money or transferred to another player.
 
-## Availability, responsibility and disputes
+## Your progress
 
-We aim to keep the game working but availability can vary. [COUNSEL: INSERT JURISDICTION-APPROPRIATE WARRANTY, LIABILITY, TERMINATION, CONSUMER RIGHTS, GOVERNING LAW AND DISPUTE TERMS. DO NOT EXCLUDE NON-WAIVABLE RIGHTS.] Contact us at [SUPPORT CONTACT AND URL]. [ADD REQUIRED APPLE LICENSED APPLICATION END USER LICENSE AGREEMENT TERMS OR USE APPLE'S STANDARD EULA, AS APPROPRIATE; VERIFY STORE METADATA.]
+Scores, rubies, unlocked themes and other progress are stored on your device. Clearing game data, uninstalling the game, changing devices or a storage failure may cause progress to be lost. Backup and restoration depend on your device and settings.
+
+## Third-party services and privacy
+
+Ads and other third-party services may be subject to their providers' terms and privacy practices. Our [privacy policy](privacy-policy.html) explains how information is handled in connection with the game.
+
+## Changes and availability
+
+We may update the game, change or remove features, or suspend its availability. Availability may also be affected by your device, network or third-party services.
+
+## Consumer rights and responsibility
+
+Nothing in these terms limits rights or remedies that cannot lawfully be excluded under applicable law. To the extent permitted by law, the game is provided as available and we do not promise uninterrupted or error-free operation. Your mandatory consumer rights remain in effect.
+
+## Disputes and app stores
+
+If you have a concern, please contact us so we can try to resolve it. You retain any rights to bring a claim or seek a remedy under applicable law. Your app store’s applicable terms may also govern your download and use of the game.
+
+## Changes to these terms
+
+We may update these terms as the game or applicable requirements change. We will post the revised terms here and provide notice or obtain agreement where required by law. The effective date above identifies the current version.
 
 </div>
