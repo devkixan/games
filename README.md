@@ -6,11 +6,15 @@ Guest-facing pages for our games.
 
 ### Block Stack Skybound
 
+- [Home](blockstack-skybound/index.md) — `/blockstack-skybound/index.html`
+
 - [Privacy policy](blockstack-skybound/privacy-policy.md) — `/blockstack-skybound/privacy-policy.html`
 - [Terms of use](blockstack-skybound/terms-of-use.md) — `/blockstack-skybound/terms-of-use.html`
 - [Contact](blockstack-skybound/contact.md) — `/blockstack-skybound/contact.html`
 
 ### Classic 90s Snake Game
+
+- [Home](classic-90s-snake-game/index.md) — `/classic-90s-snake-game/index.html`
 
 - [Privacy policy](classic-90s-snake-game/privacy-policy.md) — `/classic-90s-snake-game/privacy-policy.html`
 - [Terms of use](classic-90s-snake-game/terms-of-use.md) — `/classic-90s-snake-game/terms-of-use.html`

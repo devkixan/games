@@ -6,8 +6,8 @@ import type { Game } from '../navigation'
 const props = defineProps<{ game?: Game }>()
 const { page } = useData()
 const tabs = computed(() => props.game?.links ?? [])
-const homeLabel = computed(() => (props.game ? `${props.game.name} privacy policy` : 'Inspira Games home'))
-const homeHref = computed(() => (props.game?.homeHref ?? '/blockstack-skybound/privacy-policy.html'))
+const homeLabel = computed(() => (props.game ? `${props.game.name} home` : 'Inspira Games home'))
+const homeHref = computed(() => (props.game?.homeHref ?? '/blockstack-skybound/index.html'))
 const wordmark = computed(() => {
   const words = (props.game?.name ?? 'inspira games').split(' ')
   return { strong: words.slice(0, -1).join(' '), light: words.at(-1) }
