@@ -19,9 +19,9 @@ The game stores your best score, gameplay statistics, ruby balance, unlocked and
 
 ## Advertising
 
-The mobile game uses Google AdMob to show banner ads and optional rewarded ads. When an ad is requested or displayed, Google and any configured advertising or mediation partners may receive information such as your IP address, device and advertising identifiers, device characteristics, approximate location derived from IP address, and information about ad interactions. They may use it to provide and measure ads, prevent fraud, and, depending on your choices and their configuration, personalize advertising.
+The mobile game uses Google AdMob to show banner ads and optional rewarded ads. When an ad is requested or displayed, AdMob may collect and share approximate location and device or other identifiers with Google and other advertising partners for advertising or marketing. Approximate location may be derived from your IP address. Information involved may also include device characteristics and ad interactions. Advertising providers may use this information to provide and measure ads, prevent fraud, and, depending on your choices and their configuration, personalize advertising.
 
-Google describes its practices in its [Privacy Policy](https://policies.google.com/privacy) and [information about how it uses data from partner apps](https://policies.google.com/technologies/partner-sites).
+Google describes its practices in its [Privacy Policy](https://policies.google.com/privacy) and [information about how it uses data from partner apps](https://policies.google.com/technologies/partner-sites). You can also learn more about the advertising service in [AdMob Help](https://support.google.com/admob/).
 
 Where an advertising consent form is available, you can make choices there. On mobile, the game's help panel includes **Ad Privacy Options**, which opens the privacy options form when available. Your device may also offer advertising privacy controls. The options available depend on your location, device and the ad configuration.
 
@@ -31,7 +31,7 @@ If you contact us, we receive the information you choose to submit and use it to
 
 ## Security
 
-Game progress and preferences are stored on your device using local storage. Protect access to your device and any backups, since someone with access to them may be able to access that information. Our contact page loads its Google Form over HTTPS. Google handles the form and advertising services; see [Google’s Privacy Policy](https://policies.google.com/privacy) for information about its security practices. Avoid including sensitive information in support requests unless it is needed to resolve your issue.
+Data transferred by the app is encrypted in transit over a secure connection. Game progress and preferences are stored on your device using local storage. Protect access to your device and any backups, since someone with access to them may be able to access that information. Our contact page loads its Google Form over HTTPS. Google handles the form and advertising services; see [Google’s Privacy Policy](https://policies.google.com/privacy) for information about its security practices. Avoid including sensitive information in support requests unless it is needed to resolve your issue.
 
 ## Retention, sharing and transfers
 
