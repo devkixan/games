@@ -10,7 +10,7 @@ title: Terms of use | Block Stack Skybound
 
 ## About these terms
 
-These terms govern your use of Block Stack Skybound, provided by the team behind the game ("we", "us" or "our"). If you are a minor, ask your parent or guardian for permission to play where required. If you have questions, visit our [contact page](contact.html).
+These terms govern your use of Block Stack Skybound, provided by Dev Kixan ("we", "us" or "our"). If you are a minor, ask your parent or guardian for permission to play where required. If you have questions, visit our [contact page](contact.html).
 
 ## Playing the game
 

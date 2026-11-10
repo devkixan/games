@@ -11,7 +11,7 @@ title: Privacy policy | Block Stack Skybound
 
 ## About this policy
 
-This policy explains how the team behind Block Stack Skybound ("we", "us" or "our") handles information when you play the game or contact us. You can reach us through our [contact page](contact.html).
+This policy explains how Dev Kixan, the developer of Block Stack Skybound ("we", "us" or "our"), handles information when you play the game or contact us. You can reach us through our [contact page](contact.html).
 
 ## Information stored on your device
 
@@ -19,7 +19,7 @@ The game stores your best score, gameplay statistics, ruby balance, unlocked and
 
 ## Advertising
 
-The mobile game uses Google AdMob to show banner ads and optional rewarded ads. When an ad is requested or displayed, AdMob may collect and share approximate location and device or other identifiers with Google and other advertising partners for advertising or marketing. Approximate location may be derived from your IP address. Information involved may also include device characteristics and ad interactions. Advertising providers may use this information to provide and measure ads, prevent fraud, and, depending on your choices and their configuration, personalize advertising.
+The mobile game uses Google AdMob to show banner ads and optional rewarded ads. Google and its advertising partners may collect and share information including your IP address and approximate location derived from it, device or advertising identifiers, device characteristics, app and ad interactions, and diagnostic or performance information. They may use this information to provide and measure ads, analyze performance, prevent fraud, and, depending on your choices and their configuration, personalize advertising.
 
 Google describes its practices in its [Privacy Policy](https://policies.google.com/privacy) and [information about how it uses data from partner apps](https://policies.google.com/technologies/partner-sites). You can also learn more about the advertising service in [AdMob Help](https://support.google.com/admob/).
 
@@ -31,7 +31,7 @@ If you contact us, we receive the information you choose to submit and use it to
 
 ## Security
 
-Data transferred by the app is encrypted in transit over a secure connection. Game progress and preferences are stored on your device using local storage. Protect access to your device and any backups, since someone with access to them may be able to access that information. Our contact page loads its Google Form over HTTPS. Google handles the form and advertising services; see [Google’s Privacy Policy](https://policies.google.com/privacy) for information about its security practices. Avoid including sensitive information in support requests unless it is needed to resolve your issue.
+Game progress and preferences are stored on your device using local storage. Protect access to your device and any backups, since someone with access to them may be able to access that information. Our contact page loads its Google Form over HTTPS. Google handles the form and advertising services; see [Google’s Privacy Policy](https://policies.google.com/privacy) for information about its security practices. Avoid including sensitive information in support requests unless it is needed to resolve your issue.
 
 ## Retention, sharing and transfers
 
@@ -45,7 +45,7 @@ You can remove locally stored game data using your device or browser controls, o
 
 ## Children
 
-Parents and guardians who have questions about a child’s information or wish to request its deletion can reach us through our [contact page](contact.html). Advertising providers may process information as described above; available choices depend on the device and applicable settings.
+Block Stack Skybound is intended for users aged 13 and above. Parents and guardians who have questions about a child’s information or wish to request its deletion can reach us through our [contact page](contact.html). Advertising providers may process information as described above; available choices depend on the device and applicable settings.
 
 ## Changes to this policy
 
