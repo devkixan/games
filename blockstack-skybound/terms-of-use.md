@@ -8,6 +8,8 @@ title: Terms of use | Block Stack Skybound
 
 **Effective date:** November 10, 2026
 
+**Last updated:** November 11, 2026
+
 ## About these terms
 
 These terms govern your use of Block Stack Skybound, provided by Dev Kixan ("we", "us" or "our"). If you are a minor, ask your parent or guardian for permission to play where required. If you have questions, visit our [contact page](contact.html).
@@ -24,7 +26,7 @@ Rubies are in-game units used to unlock themes. In the current game, they have n
 
 ## Your progress
 
-Scores, rubies, unlocked themes and other progress are stored on your device. Clearing game data, uninstalling the game, changing devices or a storage failure may cause progress to be lost. Backup and restoration depend on your device and settings.
+Scores, rubies, unlocked themes and other progress are stored locally on your device. We do not back up this game data and cannot restore it if it is lost. Clearing game data, uninstalling the game, changing devices or a device failure may permanently erase your progress. Your device or platform may include the data in its own backup, depending on its settings; restoration is not guaranteed.
 
 ## Third-party services and privacy
 

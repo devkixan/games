@@ -6,23 +6,23 @@ title: Privacy policy | Classic 90s Snake Game
 
 <div class="prose">
 
-## Overview
+**Last updated:** November 11, 2026
+
+## About this policy
 
 This Privacy Policy explains how Classic 90s Snake Game (the “app”) handles information. The game is designed for offline play: it does not require an account and does not ask you to provide your name, email address, phone number, precise location, or payment information to play.
 
 **Developer:** Dev Kixan
 
-**Last updated:** Nov 11, 2026
-
-## Your data
+## Information stored on your device
 
 **Stored:** On device
 
-The app saves gameplay preferences, unlocked themes and filters, sound and vibration choices, selected game settings, and high scores locally on your device. This information is used only to remember your choices and game progress. We do not receive this local game information on our servers.
+The app saves gameplay preferences, unlocked themes and filters, sound and vibration choices, selected game settings, and high scores locally on your device. This information is used only to remember your choices and game progress. We do not receive or back up this local game data and cannot restore it if it is lost.
 
 **Removing it**
 
-You can remove this information by clearing the app’s data or uninstalling it. For a browser version, clear the site data in your browser. This may reset your saved preferences, unlocked items, and scores. Backups may retain this information; whether it is backed up and restored depends on your device and backup settings.
+Clearing the app’s data, uninstalling it, changing devices or a device failure may permanently erase your progress. For a browser version, clearing site data can also erase it. Your device or platform may include the data in its own backup, depending on its settings; restoration is not guaranteed.
 
 ## Advertising
 
@@ -44,7 +44,7 @@ We do not use Google Analytics or a separate analytics service in the app. Googl
 
 [How Google uses app data](https://policies.google.com/technologies/partner-sites) · [Google Privacy Policy](https://policies.google.com/privacy)
 
-## Your choices
+**Your advertising choices**
 
 **Consent**
 
@@ -54,7 +54,7 @@ The app checks whether ads can be requested and may present an advertising conse
 
 You can also manage advertising settings through your device settings or Google account settings where supported.
 
-## Retention
+## Retention, sharing and transfers
 
 **Game data:** Until cleared
 
@@ -68,7 +68,7 @@ Advertising-related information is handled by Google under its own policies. Adv
 
 Classic 90s Snake Game is intended for users aged 13 and above. Parents and guardians who have questions about a child’s information or wish to request its deletion can reach us through the contact form below. Advertising providers may process information as described above.
 
-## Your rights
+## Your privacy choices and rights
 
 Depending on where you live, you may have rights to request access to, deletion of, correction of, or information about personal data that we control.
 
@@ -84,11 +84,11 @@ For advertising-related data, use the privacy controls described above or contac
 
 You may also send us a request through the contact form below; we will respond as required by applicable law.
 
-## Changes
+## Changes to this policy
 
 This policy may be updated when the app or its services change. The latest version will be available at this page, with its revision date.
 
-## Contact
+## Contact and support
 
 For support, privacy questions, or data-related requests, send us a message through the [contact form](contact.html).
 

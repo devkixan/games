@@ -15,7 +15,7 @@ This policy explains how Dev Kixan, the developer of Block Stack Skybound ("we",
 
 ## Information stored on your device
 
-The game stores your best score, gameplay statistics, ruby balance, unlocked and selected themes, and sound and vibration preferences on your device so it can remember your progress and settings. Clearing the game's storage or uninstalling it may delete this information. Whether it is included in a device backup and can be restored depends on your device and backup settings.
+The game stores your best score, gameplay statistics, ruby balance, unlocked and selected themes, and sound and vibration preferences locally on your device. We do not back up this game data and cannot restore it if it is lost. Clearing the game's storage, uninstalling it, changing devices or a device failure may permanently erase your progress. Your device or platform may include the data in its own backup, depending on its settings; restoration is not guaranteed.
 
 ## Advertising
 
