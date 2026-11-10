@@ -10,7 +10,7 @@ title: Terms of use | Classic 90s Snake Game
 
 These Terms of Use govern your use of Classic 90s Snake Game (the “app”), provided by Dev Kixan (“we,” “us,” or “our”). By downloading, installing, or using the app, you agree to these Terms. If you do not agree, do not use the app.
 
-**Last updated:** Nov 5, 2026
+**Last updated:** Nov 11, 2026
 
 ## Your license
 
@@ -22,7 +22,7 @@ You may not copy, modify, distribute, sell, lease, sublicense, reverse engineer,
 
 **Local progress**
 
-The app may save settings, high scores, points, and unlocked cosmetic features locally on your device. There is no account, cloud backup, or cross-device transfer. Clearing app data, uninstalling the app, changing devices, or an app error may permanently remove this local progress. To the extent permitted by law, we are not responsible for restoring it.
+The app may save settings, high scores, points, and unlocked cosmetic features locally on your device. There is no account or developer-provided cloud sync. Device backup and restoration depend on your device and settings. Clearing app data, uninstalling the app, changing devices, or an app error may permanently remove this local progress. To the extent permitted by law, we are not responsible for restoring it.
 
 **Points & unlocks**
 
