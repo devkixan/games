@@ -41,6 +41,14 @@ function readLinks(files: Record<string, string>, path: string): NavLink[] | und
 
 export const games: Game[] = [
   {
+    name: 'Classic 90s Snake Game',
+    prefix: '/classic-90s-snake-game/',
+    accentColor: '#34623a',
+    homeHref: '/classic-90s-snake-game/privacy-policy.html',
+    links: readLinks(navigationFiles, '/classic-90s-snake-game/navigations.md') ?? [],
+    footerLinks: readLinks(footerFiles, '/classic-90s-snake-game/footer.md'),
+  },
+  {
     name: 'Block Stack Skybound',
     prefix: '/blockstack-skybound/',
     accentColor: '#b3472d',
