@@ -8,9 +8,9 @@ title: Classic 90s Snake Game
 
 ## About the game
 
-Classic 90s Snake Game brings the familiar Snake experience back for a new round. Guide your snake, collect food, and see how high you can score.
+Inspired by the old Snake game of the 90s, Classic 90s Snake Game brings the familiar experience back for a new round. Guide your snake, collect food, and see how high you can score.
 
-As you play, earn points and unlock cosmetic themes and filters. Your settings and progress are saved on your device.
+As you play, earn points and unlock vibrant themes and filters. Your settings and progress are saved on your device.
 
 ## Need help?
 
