@@ -6,7 +6,8 @@ title: Privacy policy | Block Stack Skybound
 
 <div class="prose">
 
-**Effective date:** November 10, 2026
+**Effective date:** November 10, 2026  
+**Last updated:** November 11, 2026
 
 ## About this policy
 
@@ -27,6 +28,10 @@ Where an advertising consent form is available, you can make choices there. On m
 ## Contact and support
 
 If you contact us, we receive the information you choose to submit and use it to respond and handle your request. Our contact page uses Google Forms; Google processes information in connection with providing that service. Avoid sending sensitive information unless it is needed to resolve your request.
+
+## Security
+
+Game progress and preferences are stored on your device using local storage. Protect access to your device and any backups, since someone with access to them may be able to access that information. Our contact page loads its Google Form over HTTPS. Google handles the form and advertising services; see [Google’s Privacy Policy](https://policies.google.com/privacy) for information about its security practices. Avoid including sensitive information in support requests unless it is needed to resolve your issue.
 
 ## Retention, sharing and transfers
 
