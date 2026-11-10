@@ -27,7 +27,7 @@ const themeStyle = computed(() => (game.value ? {
     <a class="skip-link btn btn-primary" href="#main-content">Skip to content</a>
     <SiteHeader :game="game" />
     <main id="main-content" class="min-h-[65vh]">
-      <div class="layout layout-prose pt-(--space-8)">
+      <div v-if="!frontmatter.hidePageIntro" class="layout layout-prose pt-(--space-8)">
         <h1 class="m-0 text-display-xs leading-heading tracking-heading font-bold text-ink text-balance">{{ frontmatter.pageTitle || page.title }}</h1>
         <p v-if="frontmatter.description" class="mt-(--space-5) text-xl leading-body text-ink-soft max-[700px]:text-lg">{{ frontmatter.description }}</p>
       </div>
