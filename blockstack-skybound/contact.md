@@ -6,10 +6,6 @@ title: Contact us | Block Stack Skybound
 
 <div class="prose">
 
-> **Draft, not for publication.** The support contact details below have not yet been confirmed.
-
-For questions, feedback, or support with Block Stack Skybound, contact **[SUPPORT EMAIL OR SUPPORT URL]**.
-
-For privacy requests, contact **[PRIVACY CONTACT AND URL]**. The operator's name and postal address are **[LEGAL OPERATOR NAME AND ADDRESS]**.
+For questions, feedback, or support with Block Stack Skybound, please use our [contact form](https://forms.gle/DGe5soWs8WQJqhSj8).
 
 </div>
