@@ -1,5 +1,6 @@
 import type { IconifyIcon } from '@iconify/vue'
 import blockStackLogo from './assets/block-stack-logo-light.svg'
+import snakeLogo from './assets/snake-logo-dark.svg'
 
 export interface NavLink {
   label: string
@@ -15,6 +16,10 @@ export interface Game {
    * Must reach 4.5:1 contrast on --color-paper (#f8f8f1). See design-guidelines skill.
    */
   accentColor: string
+  brandColor?: string
+  brandTextColor?: string
+  brandHoverColor?: string
+  brandLineColor?: string
   logo?: string
   homeHref?: string
   downloads?: { appStore?: string; googlePlay?: string }
@@ -44,6 +49,11 @@ export const games: Game[] = [
     name: 'Classic 90s Snake Game',
     prefix: '/classic-90s-snake-game/',
     accentColor: '#34623a',
+    brandColor: '#8FA866',
+    brandTextColor: '#252522',
+    brandHoverColor: '#a1b77c',
+    brandLineColor: 'rgb(37 37 34 / 0.5)',
+    logo: snakeLogo,
     homeHref: '/classic-90s-snake-game/privacy-policy.html',
     links: readLinks(navigationFiles, '/classic-90s-snake-game/navigations.md') ?? [],
     footerLinks: readLinks(footerFiles, '/classic-90s-snake-game/footer.md'),

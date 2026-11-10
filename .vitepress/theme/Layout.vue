@@ -7,7 +7,13 @@ import { games } from './navigation'
 
 const { page, frontmatter } = useData()
 const game = computed(() => games.find((item) => page.value.relativePath.startsWith(item.prefix.slice(1))))
-const themeStyle = computed(() => (game.value ? { '--game-accent': game.value.accentColor } : undefined))
+const themeStyle = computed(() => (game.value ? {
+  '--game-accent': game.value.accentColor,
+  ...(game.value.brandColor && { '--color-brand': game.value.brandColor }),
+  ...(game.value.brandTextColor && { '--color-on-brand': game.value.brandTextColor }),
+  ...(game.value.brandHoverColor && { '--color-brand-hover': game.value.brandHoverColor }),
+  ...(game.value.brandLineColor && { '--color-on-brand-line': game.value.brandLineColor }),
+} : undefined))
 </script>
 
 <template>
