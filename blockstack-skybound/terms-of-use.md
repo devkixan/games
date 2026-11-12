@@ -1,7 +1,7 @@
 ---
 pageTitle: Terms of use
-description: The terms for playing Block Stack Skybound.
-title: Terms of use | Block Stack Skybound
+description: "The terms for playing Block Stack: Skybound."
+title: "Terms of use | Block Stack: Skybound"
 ---
 
 <div class="prose">
@@ -12,7 +12,7 @@ title: Terms of use | Block Stack Skybound
 
 ## About these terms
 
-These terms govern your use of Block Stack Skybound, provided by Dev Kixan ("we", "us" or "our"). The game is intended for users aged 13 and above. If you are under the age of majority where you live, ask your parent or guardian for permission to play where required. If you have questions, visit our [contact page](contact.html).
+These terms govern your use of Block Stack: Skybound, provided by Dev Kixan ("we", "us" or "our"). The game is intended for users aged 13 and above. If you are under the age of majority where you live, ask your parent or guardian for permission to play where required. If you have questions, visit our [contact page](contact.html).
 
 ## Playing the game
 

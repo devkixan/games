@@ -1,14 +1,14 @@
 ---
-pageTitle: Block Stack Skybound
+pageTitle: "Block Stack: Skybound"
 description: A one-tap block-stacking game. Build your tower skyward.
-title: Block Stack Skybound
+title: "Block Stack: Skybound"
 ---
 
 <div class="prose">
 
 ## About the game
 
-Block Stack Skybound is a one-tap block-stacking game about building your way skyward. Time each drop to line up the sliding block with the tower. Any overhang is cut away, so every miss leaves you with less to work with. Keep stacking and see how high you can go.
+Block Stack: Skybound is a one-tap block-stacking game about building your way skyward. Time each drop to line up the sliding block with the tower. Any overhang is cut away, so every miss leaves you with less to work with. Keep stacking and see how high you can go.
 
 ## How to play
 

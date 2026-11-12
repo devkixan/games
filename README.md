@@ -4,7 +4,7 @@ Guest-facing pages for our games.
 
 ## Pages
 
-### Block Stack Skybound
+### Block Stack: Skybound
 
 - [Home](blockstack-skybound/index.md) — `/blockstack-skybound/index.html`
 

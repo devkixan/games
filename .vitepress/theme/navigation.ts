@@ -59,7 +59,7 @@ export const games: Game[] = [
     footerLinks: readLinks(footerFiles, '/classic-90s-snake-game/footer.md'),
   },
   {
-    name: 'Block Stack Skybound',
+    name: 'Block Stack: Skybound',
     prefix: '/blockstack-skybound/',
     accentColor: '#b3472d',
     logo: blockStackLogo,

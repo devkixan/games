@@ -1,7 +1,7 @@
 ---
 pageTitle: Privacy policy
-description: How Block Stack Skybound handles your information.
-title: Privacy policy | Block Stack Skybound
+description: "How Block Stack: Skybound handles your information."
+title: "Privacy policy | Block Stack: Skybound"
 ---
 
 <div class="prose">
@@ -11,7 +11,7 @@ title: Privacy policy | Block Stack Skybound
 
 ## About this policy
 
-This policy explains how Dev Kixan, the developer of Block Stack Skybound ("we", "us" or "our"), handles information when you play the game or contact us. You can reach us through our [contact page](contact.html).
+This policy explains how Dev Kixan, the developer of Block Stack: Skybound ("we", "us" or "our"), handles information when you play the game or contact us. You can reach us through our [contact page](contact.html).
 
 ## Information stored on your device
 
@@ -55,7 +55,7 @@ You can remove locally stored game data using your device or browser controls, o
 
 ## Children
 
-Block Stack Skybound is intended for users aged 13 and above and is not directed to children under 13. We do not knowingly collect personal information from children under 13. Parents and guardians who have questions about a child’s information or wish to request its deletion can reach us through our [contact page](contact.html). If you believe a child under 13 has contacted us, let us know through the contact page and we will delete the message. Advertising providers may process information as described above; available choices depend on the device and applicable settings.
+Block Stack: Skybound is intended for users aged 13 and above and is not directed to children under 13. We do not knowingly collect personal information from children under 13. Parents and guardians who have questions about a child’s information or wish to request its deletion can reach us through our [contact page](contact.html). If you believe a child under 13 has contacted us, let us know through the contact page and we will delete the message. Advertising providers may process information as described above; available choices depend on the device and applicable settings.
 
 ## Changes to this policy
 
