@@ -8,9 +8,7 @@ hidePageIntro: true
 <div class="contact-page">
 
 <section class="contact-card" aria-labelledby="support-heading">
-  <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>We're here to help</p>
   <h2 id="support-heading">Email support</h2>
-  <p>Have a question about the game? Get in touch by email.</p>
   <a class="contact-email" href="mailto:support.devkixan@gmail.com">support.devkixan@gmail.com <span aria-hidden="true">↗</span></a>
 </section>
 
