@@ -1,4 +1,8 @@
 {
   "android": "1.1.3",
-  "ios": "1.1.3"
+  "ios": "1.1.3",
+  "message": {
+    "heading": "Update available",
+    "description": "A new version of Classic 90s Snake Game is available. Update to the latest version to keep playing with the latest improvements."
+  }
 }

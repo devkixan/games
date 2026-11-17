@@ -1,4 +1,8 @@
 {
   "android": "1.1.1",
-  "ios": "1.1.1"
+  "ios": "1.1.1",
+  "message": {
+    "heading": "Update available",
+    "description": "A new version of Block Stack: Skybound is available. Update to the latest version to keep playing with the latest improvements."
+  }
 }

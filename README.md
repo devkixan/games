@@ -21,3 +21,23 @@ Guest-facing pages for our games.
 - [Contact](classic-90s-snake-game/contact.md) — `/classic-90s-snake-game/contact.html`
 
 Add new guest-facing pages and their routes to this list when they are created.
+
+## Version manifests
+
+Each game's `public/<game>/version.json` contains the latest `android` and `ios`
+version strings and a shared update message:
+
+```json
+{
+  "android": "1.1.1",
+  "ios": "1.1.1",
+  "message": {
+    "heading": "Update available",
+    "description": "A new version is available. Update to get the latest improvements."
+  }
+}
+```
+
+Edit `message.heading` and `message.description` to customize the update prompt.
+Game clients must read these fields to display the message and should use their
+default copy if the message or either field is missing or empty.
