@@ -33,11 +33,13 @@ version strings and a shared update message:
   "ios": "1.1.1",
   "message": {
     "heading": "Update available",
+    "toast": "A new version is available. Update now!",
     "description": "A new version is available. Update to get the latest improvements."
   }
 }
 ```
 
 Edit `message.heading` and `message.description` to customize the update prompt.
+Edit `message.toast` to customize the update toast text.
 Game clients must read these fields to display the message and should use their
-default copy if the message or either field is missing or empty.
+default copy if the message or any field is missing or empty.

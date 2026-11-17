@@ -3,6 +3,7 @@
   "ios": "1.1.1",
   "message": {
     "heading": "Update available",
+    "toast": "A new version is available. Update now!",
     "description": "A new version of Block Stack: Skybound is available. Update to the latest version to keep playing with the latest improvements."
   }
 }
