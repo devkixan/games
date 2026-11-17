@@ -16,11 +16,23 @@ The game is intended for players aged 13 and over. If you are under the age of m
 
 ## Playing the game
 
-We give you a limited, personal, non-exclusive, non-transferable permission to play the game for your own entertainment, subject to these terms and applicable law. You must not use the game unlawfully, interfere with its operation, infringe anyone’s rights, or manipulate ads or rewards through fraudulent clicks, automated activity or other misuse. Nothing in these terms restricts activity that applicable law permits despite a contractual restriction.
+We give you a limited, personal, non-exclusive, non-transferable permission to play the game for your own entertainment, subject to these terms and applicable law. You must not use the game unlawfully, interfere with its operation, infringe anyone’s rights, or manipulate scores, rankings, ads or rewards through cheating, fraudulent clicks, automated activity or other misuse. Nothing in these terms restricts activity that applicable law permits despite a contractual restriction.
 
 ## Your progress
 
-Settings, high scores, points and unlocked cosmetic items are saved locally on your device or in your browser. We do not provide a backup of this game data and cannot restore it if it is lost. Clearing app or browser data, uninstalling the game, changing devices, or a device failure may erase your progress. Your device or platform may include the data in its own backup, depending on its settings; restoration is not guaranteed.
+Settings, local high scores, points and unlocked cosmetic items are saved locally on your device or in your browser. We do not provide a backup of this game data and cannot restore it if it is lost. Clearing app or browser data, uninstalling the game, changing devices, or a device failure may erase your progress. Your device or platform may include the data in its own backup, depending on its settings; restoration is not guaranteed.
+
+## Rank Mode and global leaderboards
+
+Rank Mode is optional in supported iOS and Android versions and requires an internet connection, a configured leaderboard and sign-in to Apple Game Center or Google Play Games. Using these services is also subject to the platform provider’s applicable terms and account requirements. Rank Mode is not available in the browser version.
+
+Starting **New Game** from Rank Mode starts a fresh Classic / Normal run with predator off and no revives. The game submits the score when that run ends in game over or a win. Continuing or retrying keeps the run’s ranked or local choice; **New game** in the main menu starts local play. Existing local high scores and scores earned in local runs are not uploaded.
+
+Apple and Google maintain separate rankings using submitted best scores. Submission and leaderboard availability depend on the platform service and connectivity. The game reports submission failures and saves local records, but does not keep a persistent upload queue or automatically retry failed submissions. We cannot guarantee that a score will be accepted, displayed or preserved by the platform service.
+
+Leaderboard records are separate from local progress and do not restore your settings, points or unlocked items. Clearing local data or uninstalling the game does not itself remove scores already held by Apple or Google. Profile visibility, data handling and available controls are explained in our [privacy policy](privacy-policy.html).
+
+Rankings are for entertainment and do not award cash or prizes. You must not submit falsified scores or interfere with fair competition.
 
 ## Points, unlocks and ads
 
