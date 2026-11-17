@@ -6,60 +6,46 @@ title: Terms of use | Classic 90s Snake Game
 
 <div class="prose">
 
-**Last updated:** November 11, 2026
+**Last revised:** November 17, 2026
 
 ## About these terms
 
-These Terms of Use govern your use of Classic 90s Snake Game (the “app”), provided by Dev Kixan (“we,” “us,” or “our”). By downloading, installing, or using the app, you agree to these Terms. If you do not agree, do not use the app.
+These terms govern your use of Classic 90s Snake Game (the “game”), provided by Dev Kixan (“we”, “us” or “our”). They apply to the mobile app and the browser version where available. By using the game, you agree to these terms. If you do not agree, please do not use it. Any terms from the store where you obtained the game also apply where relevant.
+
+The game is intended for players aged 13 and over. If you are under the age of majority where you live, ask a parent or guardian for permission to play where required.
 
 ## Playing the game
 
-Subject to these Terms and the rules of the store from which you obtained the app, we grant you a personal, limited, non-exclusive, non-transferable, revocable license to download and use the app for personal, non-commercial entertainment.
-
-You may not copy, modify, distribute, sell, lease, sublicense, reverse engineer, decompile, or attempt to extract the app or its source code except where applicable law permits that activity despite this restriction.
+We give you a limited, personal, non-exclusive, non-transferable permission to play the game for your own entertainment, subject to these terms and applicable law. You must not use the game unlawfully, interfere with its operation, infringe anyone’s rights, or manipulate ads or rewards through fraudulent clicks, automated activity or other misuse. Nothing in these terms restricts activity that applicable law permits despite a contractual restriction.
 
 ## Your progress
 
-The app saves settings, high scores, points, and unlocked cosmetic features locally on your device. We do not back up this game data and cannot restore it if it is lost. Clearing app data, uninstalling the app, changing devices or a device failure may permanently erase your progress. Your device or platform may include the data in its own backup, depending on its settings; restoration is not guaranteed.
+Settings, high scores, points and unlocked cosmetic items are saved locally on your device or in your browser. We do not provide a backup of this game data and cannot restore it if it is lost. Clearing app or browser data, uninstalling the game, changing devices, or a device failure may erase your progress. Your device or platform may include the data in its own backup, depending on its settings; restoration is not guaranteed.
 
-## Ads, rewards and points
+## Points, unlocks and ads
 
-**Points & unlocks**
+You can earn points through play and use them to unlock available cosmetic items. Some mobile versions also let you choose to watch rewarded ads to unlock an item or continue a game. An item may require more than one completed ad. Availability and requirements can change, and ads may be unavailable because of connectivity, inventory, location, technical issues or privacy choices. A reward is granted when the advertising service confirms it was earned and the game completes the reward flow.
 
-In-game points, themes, filters, and continues are gameplay features only. They are not money, currency, stored value, property, or a payment instrument; have no cash value; are not transferable; cannot be exchanged, sold, or redeemed outside the app; and may not be used for gambling or prizes.
+Points, themes, device colors and continues are for use in the game. They have no cash value, cannot be transferred or redeemed outside the game, and are not prizes or payment instruments. The current game does not offer in-app purchases or cash rewards.
 
-**No purchases**
-
-The current app does not offer in-app purchases or cash rewards. If that changes, the relevant store terms and any additional terms presented with the purchase will apply.
-
-Native mobile versions may show banner advertising and optional rewarded ads provided through Google Mobile Ads. Banner ads may appear in the menu or after a game. You choose whether to watch a rewarded ad to unlock an in-app item or continue a game.
-
-A rewarded ad may not be available because of connectivity, inventory, technical issues, your region, or your privacy choices. Rewards are granted only when the advertising service confirms completion. Rewards are optional, non-transferable, and usable only in this app. Do not click ads fraudulently or use automated means to generate impressions or clicks.
-
-Advertising and related data practices are described in our [Privacy Policy](privacy-policy.html). Google and advertisers may apply their own terms and privacy notices to their services and ad destinations.
-
-## Acceptable use
-
-You must use the app lawfully and must not interfere with its operation, bypass its security measures, exploit bugs to obtain an unfair benefit, or use it to infringe another person’s rights. The app has no user-generated-content, chat, upload, or sharing features. You may not use it to create, upload, distribute, or facilitate unlawful, harmful, or exploitative content, including child sexual abuse or exploitation material.
+Mobile versions may also show banner ads and full-screen ads between games. Advertising and related data practices are described in our [privacy policy](privacy-policy.html). Ads, advertisers and their destinations may be subject to their providers’ own terms and privacy notices.
 
 ## Ownership
 
-The app, including its original code, artwork, sound design, text, and trademarks, is owned by us or our licensors and is protected by applicable intellectual-property laws. Classic Snake games inspired the app; third-party names and trademarks belong to their respective owners and are used only to identify relevant services.
+We and our licensors retain rights in the game and its content, subject to any applicable third-party licenses. These terms do not transfer ownership to you. Third-party names and trademarks belong to their respective owners and are used to identify relevant services.
 
-## Availability
+## Availability and consumer rights
 
-We may update, suspend, or discontinue any part of the app at any time. We do not guarantee that the app, advertisements, rewards, or any feature will always be available, uninterrupted, secure, or error-free.
+We may update, suspend or discontinue the game or its features. We cannot promise that the game, ads or rewards will always be available or error-free. To the extent permitted by law, the game is provided “as is” and “as available”.
 
-To the maximum extent permitted by law, the app is provided “as is” and “as available,” without warranties of any kind, whether express, implied, or statutory, including warranties of merchantability, fitness for a particular purpose, and non-infringement.
-
-## Liability
-
-To the maximum extent permitted by law, we will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of data, progress, profits, or goodwill arising from or relating to your use of, or inability to use, the app. Nothing in these Terms limits liability that cannot legally be limited or excluded.
+Nothing in these terms excludes or limits rights, remedies or liability that cannot lawfully be excluded or limited. Your mandatory consumer rights remain in effect.
 
 ## Changes to these terms
 
-We may revise these Terms when the app or applicable law changes. The current version will be posted on this page with a new revision date. Your continued use after the effective date means you accept the revised Terms, to the extent permitted by law.
+We may revise these terms as the game or applicable requirements change. We will post the revised terms here and provide notice or obtain agreement where required by law. The revision date above identifies the latest changes.
 
-For questions about these Terms, support, or a legal notice, please contact us through the [contact form](contact.html).
+## Contact
+
+For questions about the game, these terms or a legal notice, email us or use the form on our [contact page](contact.html).
 
 </div>

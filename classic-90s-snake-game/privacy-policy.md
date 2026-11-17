@@ -6,92 +6,62 @@ title: Privacy policy | Classic 90s Snake Game
 
 <div class="prose">
 
-**Last updated:** November 11, 2026
+**Last revised:** November 17, 2026
 
 ## About this policy
 
-This Privacy Policy explains how Classic 90s Snake Game (the “app”) handles information. The game is designed for offline play: it does not require an account and does not ask you to provide your name, email address, phone number, precise location, or payment information to play.
+This policy explains how Dev Kixan (“we”, “us” or “our”) handles information in Classic 90s Snake Game (the “game”) and when you contact us about it. It covers the mobile app and the browser version where available. Features can differ by platform and release configuration.
 
-**Developer:** Dev Kixan
+You do not need an account to play. The game does not ask for your name, email address, phone number, precise location or payment details to play. You can play offline, although advertising and some other services need an internet connection.
 
-## Information stored on your device
+## Information saved on your device
 
-**Stored:** On device
+The game saves your preferences, settings, high scores, points, unlocked screen and device themes, and some game and advertising-reward progress in local storage on your device or in your browser. It uses these records to remember your choices and progress. We do not receive or provide a developer backup of this local game data, and we cannot restore it for you.
 
-The app saves gameplay preferences, unlocked themes and filters, sound and vibration choices, selected game settings, and high scores locally on your device. This information is used only to remember your choices and game progress. We do not receive or back up this local game data and cannot restore it if it is lost.
-
-**Removing it**
-
-Clearing the app’s data, uninstalling it, changing devices or a device failure may permanently erase your progress. For a browser version, clearing site data can also erase it. Your device or platform may include the data in its own backup, depending on its settings; restoration is not guaranteed.
+Clearing app or browser data, uninstalling the game, changing devices, or a device failure may erase your progress. Your device or platform may include the data in its own backup, depending on its settings; restoration is not guaranteed. On the web, the game may also cache files for offline use. You can remove those files through your browser’s site-data controls.
 
 ## Advertising
 
-**Ads:** Google Mobile Ads
+Supported mobile versions may use Google Mobile Ads to show banner ads, full-screen interstitial ads between games, and optional rewarded ads. You can choose whether to watch a rewarded ad to unlock an item or continue a game. Ads and rewarded features require an internet connection and may not always be available. The browser version does not use the game’s native ad integration.
 
-Supported native mobile versions of the app may show banner ads and optional rewarded ads. Banner ads may appear in the menu or after a game ends. A rewarded ad is shown only after you choose to watch one to unlock an in-game item or continue a game.
+Google and its advertising partners may process information such as your IP address, device and operating-system details, app version, advertising or other identifiers, approximate location inferred from IP address, ad interactions, and diagnostic information. They may use it to provide and measure ads, prevent fraud, and, where permitted, personalize ads. The information used and partners involved depend on the release configuration, your region, device and choices.
 
-**Offline:** Still playable
+Learn more in [Google’s Privacy Policy](https://policies.google.com/privacy) and [how Google uses information from apps that use its services](https://policies.google.com/technologies/partner-sites).
 
-Ads need an internet connection; the game remains playable offline when ads are unavailable or you choose not to watch a rewarded ad.
+### Your advertising choices
 
-**What Google processes**
+The mobile app checks whether ads can be requested and may show a Google advertising-consent message before requesting them. When shown, **Privacy choices** in the main menu lets you review or change the available advertising choices. Options depend on your location and the advertising service’s configuration.
 
-To deliver, measure, secure, analyze, and, where permitted, personalize ads, Google and its advertising partners may process your IP address, device and operating-system details, app version, advertising or other identifiers, general location inferred from IP address, app and ad interactions, and diagnostic or performance information. The information processed and the ads shown can vary by device, region, configuration, and your privacy choices.
+On iOS, the app may also ask for permission to track you across other companies’ apps and websites. You can review your choice in your device’s privacy settings. Your device or Google account may offer additional advertising controls.
 
-**Analytics:** None
+## Updates, ratings and external links
 
-We do not use Google Analytics or a separate analytics service in the app. Google may use information from its advertising service to measure and analyze performance.
+If configured in a mobile release, the game checks a public update manifest at startup to see whether a newer version is available. The request does not include your saved game data. As with other web requests, the host may receive your IP address and request details and handle them under its own practices. A failed check does not stop the game.
 
-[How Google uses app data](https://policies.google.com/technologies/partner-sites) · [Google Privacy Policy](https://policies.google.com/privacy)
-
-**Your advertising choices**
-
-**Consent**
-
-The app checks whether ads can be requested and may present an advertising consent message before requesting ads. When available, use the app’s Privacy choices option in the main menu to review or change your advertising-consent choices. Availability depends on your location and the advertising service’s configuration.
-
-**Device settings**
-
-You can also manage advertising settings through your device settings or Google account settings where supported.
-
-## Retention, sharing and transfers
-
-**Game data:** Until cleared
-
-Local game information remains on your device until you clear the app’s data or uninstall the app, subject to any device backup. The developer does not provide user accounts or maintain a separate database of player profiles.
-
-**Ad data**
-
-Advertising-related information is handled by Google under its own policies. Advertising providers may process information in countries other than the one where you live.
-
-## Children
-
-Classic 90s Snake Game is intended for users aged 13 and above. Parents and guardians who have questions about a child’s information or wish to request its deletion can reach us through the contact form below. Advertising providers may process information as described above.
-
-## Your privacy choices and rights
-
-Depending on where you live, you may have rights to request access to, deletion of, correction of, or information about personal data that we control.
-
-**Game data**
-
-Because we do not collect or retain local game data on our servers, clearing the app’s data is normally the way to delete it.
-
-**Ad data**
-
-For advertising-related data, use the privacy controls described above or contact Google.
-
-**Requests**
-
-You may also send us a request through the contact form below; we will respond as required by applicable law.
-
-## Changes to this policy
-
-This policy may be updated when the app or its services change. The latest version will be available at this page, with its revision date.
+The game may ask Apple’s or Google’s system to show a rating prompt. The store decides whether to display it and handles any rating you submit. On Android, choosing to rate the game may open its Google Play page. Links to support, this policy and the terms open external pages, whose providers have their own privacy practices.
 
 ## Contact and support
 
-For support, privacy questions, or data-related requests, send us a message through the [contact form](contact.html).
+You can reach us by email or through the form on our [contact page](contact.html). We receive the information you choose to send and use it to respond and handle your request. The form is provided by Google; Google processes information associated with the form under its own policies. Please avoid sending sensitive information unless it is needed to resolve your request.
 
-When you contact us, we receive the information you submit and use it to respond and handle your request. The form is provided by Google, which processes information in connection with that service. Avoid sending sensitive information unless it is needed to resolve your request.
+**Support-message retention:** We keep support emails and form submissions indefinitely. You can contact us to request deletion; we will respond as required by applicable law.
+
+## Retention, sharing and transfers
+
+Local game data stays on your device until it is removed or overwritten, subject to any device or platform backup. Google, its advertising partners, the update-manifest host, app stores and support-service providers handle information they receive under their own applicable practices and retention periods. These providers may process information in countries other than your own. See the provider links above for more information.
+
+## Your privacy choices and rights
+
+You can clear local game data using your device or browser settings. Depending on where you live, you may have rights to request access to, correction or deletion of personal information, or to object to or restrict certain uses. You may also be able to withdraw consent or complain to a privacy regulator.
+
+To contact us about your information, use the [contact page](contact.html). For information held by an advertising or other service provider, you can also use that provider’s privacy controls or contact the provider. We may need information to understand or verify a request, and will respond as required by applicable law. Parents or guardians with questions about a child’s information may also contact us.
+
+## Children and teenagers
+
+The game is intended for players aged 13 and over. Age-related privacy and advertising requirements can vary by location. If you are a parent or guardian and have a question about a young player’s information, please use our [contact page](contact.html).
+
+## Changes to this policy
+
+We may update this policy when the game or its services change. We will post the revised version on this page and provide notice where required by law. The revision date above identifies the latest changes.
 
 </div>
