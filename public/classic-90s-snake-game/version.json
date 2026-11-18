@@ -1,6 +1,6 @@
 {
-  "android": "1.1.3",
-  "ios": "1.1.3",
+  "android": "1.1.4",
+  "ios": "1.1.4",
   "message": {
     "heading": "Update available",
     "toast": "A new version is available. Update now!",
