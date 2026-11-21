@@ -1,132 +1,114 @@
 ---
 name: design-guidelines
-description: Design system rules for this games site (VitePress + Tailwind v4) — color, typography, radius, spacing, motion, UI states, accessibility and component recipes. Use whenever creating or changing any page, component, style, Markdown page layout, or adding a new game to this repo, or when asked about the site's look, tokens, fonts, colors, corners, buttons, links, focus or hover states.
+description: Design system rules for this games site (VitePress + Tailwind v4, cinematic dark theme) — color, typography, radius, spacing, motion, UI states, accessibility and component recipes. Use whenever creating or changing any page, component, style, Markdown page layout, or adding a new game to this repo, or when asked about the site's look, tokens, fonts, colors, corners, buttons, links, focus or hover states.
 ---
 
 # Games site design guidelines
 
-Warm paper background, near-black ink, one coral accent, four "block" colors for brand marks and art. Calm, editorial, playful in small doses.
+Cinematic dark: pure black page, cool fog-grey condensed type (Oswald), one giant blood-red (or per-game) uppercase title per page, quiet uppercase navigation, square corners. Plain black backgrounds (no gradients or glows), lots of black space.
 
 **Source of truth:** `.vitepress/theme/tokens.css`. All component CSS is in `.vitepress/theme/style.css`. Read `tokens.css` before styling anything.
 
 ## Hard rules
 
-1. **No raw values in component CSS.** Colors, fonts, font sizes, radii, durations, spacing → `var(--token)`. Need a new value? Add a token to `tokens.css` first and document it here. Only exception: illustration-only colors scoped inside `.hero-art` (`--art-*`, tower blocks).
-2. **Spacing is on a 4px grid** (`--space-1` … `--space-24`). No 13px, 27px, 35px.
-3. **Only three font weights:** 400 regular, 600 semibold, 700 bold. Inter is loaded with exactly these; `font-synthesis: none` means anything else silently falls back. Never use 500 or 800.
-4. **No text below 12px** (`--text-micro`). Uppercase only via `text-transform` on `.eyebrow`-style labels — write sentence case in markup so screen readers don't spell words out.
+1. **No raw values in component CSS.** Colors, fonts, font sizes, radii, durations, spacing → `var(--token)`. Need a new value? Add a token to `tokens.css` first and document it here. No exceptions.
+2. **Spacing is on a 4px grid** (`--space-1` … `--space-24`).
+3. **Font weights:** 300 for body copy and descriptions (`--font-weight-light`), 400 for regular UI and display titles, 600 and 700 for emphasis and headings. Oswald is loaded from Google Fonts (`.vitepress/config.ts`) with these four weights.
+4. **No text below 12px** (`--text-micro`). Uppercase only via `text-transform` (nav, headings, hero, buttons) — write sentence case in markup.
 5. **Every interactive element has all its states** (see table below). Never ship hover without focus-visible.
-6. **Contrast:** body text ≥ 4.5:1, large display text ≥ 3:1, focus ring / control borders ≥ 3:1. `--color-accent` (#ec775c) is decorative only — use `--color-accent-strong` for any accent *text*. Check new pairs with a real contrast calculation, not by eye.
-7. Light theme only (`color-scheme: light`). Don't add dark-mode overrides piecemeal.
-8. Respect `prefers-reduced-motion` — durations are tokens that drop to 0ms; never hard-code `transition: .2s`.
+6. **Contrast on black:** body text ≥ 4.5:1, large display text ≥ 3:1. `--color-accent` (#8e1d1d) is decorative only (rules, markers, current underline). `--color-title` / per-game `titleColor` only for the giant hero title and kicker. Links use `--color-accent-strong` or the game accent.
+7. Dark theme only (`color-scheme: dark`). Don't add light-mode overrides piecemeal.
+8. Respect `prefers-reduced-motion` — durations are tokens that drop to 0ms. No looping animation.
 
 ## Color tokens
 
 | Token | Value | Use |
 |---|---|---|
-| `--color-paper` | #f8f8f1 | Page background, header |
-| `--color-paper-sunk` | #eeefe5 | Secondary sections |
-| `--color-paper-hover` / `-active` | #e6e8db / #dcdfd0 | Hover / pressed fills on paper |
-| `--color-line` | #dedfd4 | Hairlines, section borders |
-| `--color-line-strong` | #bfc2b5 | Control borders, list dividers |
-| `--color-ink` | #252522 | Headings, primary text |
-| `--color-ink-soft` | #555950 | Body copy |
-| `--color-ink-muted` | #656a5e | Eyebrows, captions, meta (still ≥ 4.5:1) |
-| `--color-inverse` (+`-hover`, `-active`) | #292b26 | Primary button, current tab |
-| `--color-on-inverse` / `-muted` | #f8f8f1 / #bec3b4 | Text on inverse |
-| `--color-accent` | #ec775c | Decorative dots, marks, underlines |
-| `--color-accent-strong` | #b3472d | Accent text, links, focus ring (5.1:1 paper, 4.7:1 paper-sunk) |
-| `--color-brand` (+`-hover`, `-active`) | = accent-strong / #9c3d26 / #85331f | Masthead bar, menu panel |
-| `--color-on-brand` / `-muted` / `-line` | paper / #fde9e2 / paper 60% | Text, labels, pill border on brand (wrap in `.on-brand`) |
-| `--color-accent-on-inverse` | #e8a38e | Accent text on dark |
-| `--color-block-{coral,sun,leaf,sky}` | | Brand mark squares, illustration |
+| `--color-paper` | #000000 | Page, header, menu panel |
+| `--color-paper-sunk` | #0b0c0c | Cards (contact) |
+| `--color-paper-hover` / `-active` | #151717 / #1f2121 | Hover / pressed fills |
+| `--color-line` | #1f2121 | Hairlines, footer/section borders |
+| `--color-line-strong` | #3d4142 | Control/card borders, table rules |
+| `--color-ink` | #d2d6d8 | Headings, current nav, strong |
+| `--color-ink-soft` | #969b9e | Body copy, nav links |
+| `--color-ink-muted` | #7c8184 | Captions, footer, meta (≥ 4.5:1) |
+| `--color-inverse` (+`-hover` #fff, `-active`) | #d2d6d8 | Primary button; `-hover` = white hover text |
+| `--color-on-inverse` | #000 | Text on primary button |
+| `--color-accent` | #8e1d1d | Decorative red: h2 rule, list markers, current underline |
+| `--color-accent-strong` | #d84b40 | Link text, focus ring (5:1 on black) |
+| `--color-title` | #b52a2a | Giant hero title (display only, 3.4:1) |
 | `--color-callout-{bg,line,ink}` | | Draft notices / blockquotes |
 
-Per-game accent: `accentColor` in `.vitepress/theme/navigation.ts` sets `--game-accent` on info pages (links, focus ring, current-nav underline). It must pass 4.5:1 on `--color-paper`.
+Per-game in `.vitepress/theme/navigation.ts`: `accentColor` → `--game-accent` (links, focus ring; ≥ 4.5:1 on black) and optional `titleColor` → `--game-title` (hero title; ≥ 3:1 on black). Use the white logo variant (`*-light.svg`).
 
 ## Typography
 
-- Family: `--font-sans` (Inter) everywhere. `--font-serif` (Georgia) **only** for a single italic accent word inside a display heading (`.display em`).
-- Scale: `--text-micro` 12 · `--text-sm` 14 · `--text-base` 16 · `--text-lg` 18 · `--text-xl` 20 · `--text-2xl` 24 · `--text-display-xs/sm/md/lg` (fluid clamps; xs is menu-panel links only).
-- Line height: `--leading-display` 0.95 (hero/section), `--leading-heading` 1.15 (page h1), `--leading-snug` 1.3 (h2/h3, labels), `--leading-body` 1.65 (paragraphs).
-- Tracking: `--tracking-display` −0.06em, `--tracking-heading` −0.03em, `--tracking-caps` +0.14em (uppercase labels only).
+- Family: `--font-sans` (Oswald, condensed) everywhere.
+- Scale: `--text-micro` 12 · `sm` 14 · `base` 16 · `lg` 18 · `xl` 20 · `2xl` 24 · `--text-display-xs/sm/md/lg` · `--text-display-xl` (game home title, up to 6.5rem).
+- Line height: `--leading-display` 0.88 (hero), `--leading-snug` 1.3, `--leading-body` 1.65.
+- Tracking: `--tracking-display` 0.01em, `--tracking-heading` 0.02em, `--tracking-caps` 0.06em (uppercase UI).
 
 | Role | Class / element | Size | Weight |
 |---|---|---|---|
-| Hero h1 | `.display.display-lg` | display-lg | 700 |
-| Section h2 | `.display.display-md` | display-md | 700 |
-| Page h1 | `.display.display-sm` | display-sm | 700 |
-| Prose h2 / h3 | `.prose h2/h3` | 2xl / xl | 600 |
-| Lead | `.lead` | lg | 400 |
-| Body | `.prose p` | lg (base < 700px) | 400 |
-| Tab / button | `.tab-link`, `.btn` | base (sm < 700px) / sm | 400 / 700 |
-| Menu link | `.menu-link` | display-xs | 600 |
-| Eyebrow / caption | `.eyebrow`, `.fine-print` | micro | 700 / 400 |
+| Home hero title | `.page-hero-home .hero-title` | display-xl, uppercase, title color | 400 |
+| Page hero title | `.hero-title` | display-sm, uppercase | 400 |
+| Kicker (game name above title) | `.hero-kicker` | display-xs, uppercase | 400 |
+| Prose h2 / h3 | `.prose h2/h3` | 2xl / xl, uppercase, h2 gets short red rule above | 700 |
+| Body and descriptions | `p`, `.prose` | lg (base < 700px) for prose | 300 |
+| Nav link | `.nav-link` | base, uppercase | 400 |
+| Section label | `.section-label` (e.g. "Get Game:") | sm | 700 |
+| Footer | `.footer-copy`, `.footer-link` | sm | 400 |
 
-## Radius (corners)
+## Radius
 
-| Token | Value | Use |
-|---|---|---|
-| `--radius-xs` | 2px | Brand-mark squares, focus ring on inline links |
-| `--radius-sm` | 4px | Illustration blocks, callouts |
-| `--radius-md` | 8px | **All controls**: buttons, toggles, inputs, tiles |
-| `--radius-lg` | 12px | Panels, artwork, cards |
-| `--radius-full` | 9999px | Pills, round icon buttons, dots |
-
-Don't mix: a button is always `md`; a card is always `lg`. Nested corners: inner radius = outer − padding (never larger than outer).
+Square look: `--radius-xs`/`-sm` 0, `--radius-md`/`-lg` 2px, `--radius-full` for round things only.
 
 ## Layout
 
-- `.layout` = centered container: `min(--layout-max 1280px, 100% − 2×--gutter)`; `--gutter` is fluid 16→48px.
-- `.layout-prose` caps reading width at `--layout-prose` (832px).
-- Masthead: centered column `--masthead-max` (= `--layout-prose`, so its edges line up with page content; full width under 700px). Brand bar height `--header-height` (64 → 56px under 700px), then a bordered tab row. The whole masthead is sticky (paper background behind it). Menu opens as a full-height `--color-brand` `<dialog>` of the same width. On game pages the wordmark, menu and footer use the game's name and only its pages (no Inspira sections, no pill); the landing page keeps Inspira Games. Footer is minimal: one hairline-topped row in the same column — copyright left, "Contact us" and "Privacy policy" links right. Nothing else. Breakpoints: 800px (stack grids), 700px (compact type), 400px (tight).
-- Borders: `--rule-width` (1px) for hairlines/controls, `--rule-width-strong` (3px) for the callout edge. Brand-mark squares: `--mark-block`.
-- Touch targets ≥ `--control-height` 44px (`--control-height-sm` 40px only for secondary header controls).
+- `.masthead` = centered `--masthead-max` (900px) column, shared by header, hero, content and footer.
+- Header: fixed black bar (`--header-height` 56px): logo · uppercase nav links · compact store links (hidden < 800px). Under 700px the links move into a hamburger `<details class="mobile-nav">` full-screen black panel with large links.
+- Every page with an intro gets `.page-hero` (plain black, no background effects; kicker, giant uppercase title, description). Game home pages (`index.md`) get the giant `display-xl` title; store links live in the header and on the home-page game cards (`StoreLinks size="md"`, "Coming soon" when no URL). `hidePageIntro: true` skips the hero (contact pages).
+- Footer: hairline-topped row — "© year Game. All rights reserved." left, uppercase links right.
+- Breakpoints: 800px, 700px. Touch targets ≥ `--control-height` 44px (`-sm` 40px for nav).
 
 ## UI states
 
-| Component | Default | Hover | Active / pressed | Current / selected | Focus-visible | Disabled |
+| Component | Default | Hover | Active | Current | Focus-visible | Disabled |
 |---|---|---|---|---|---|---|
-| `.btn-primary` | inverse bg, on-inverse text | `--color-inverse-hover`, icon nudges | `--color-inverse-active`, translateY(1px) | — | 2px ring, 3px offset | opacity .5, no pointer |
-| `.btn-secondary` | transparent, `line-strong` border | `paper-hover` fill | `paper-active` fill, translateY(1px) | `aria-expanded="true"` → `paper-active` | ring | opacity .5 |
-| `.icon-btn` (on brand) | transparent | `brand-hover` fill | `brand-active`, translateY(1px) | — | on-brand ring, inset | — |
-| `.tab-link` | paper, ink | `paper-hover` | `paper-active` | `aria-current` → ink fill, paper text | inset ring | — |
-| `.menu-link` (on brand) | on-brand, no underline | 2px underline, icon tilts | — | `aria-current` → underline | on-brand ring | — |
-| `.footer-link` | `ink-soft` | `ink`, `line-strong` underline | — | `aria-current` → `ink` + underline | ring | — |
-| `.text-link` | ink | accent underline | — | — | ring | — |
-| `.resource-row` | | title underline (accent), arrow fills + moves ↗ | arrow moves less | — | ring | — |
-| `.prose a` | accent-strong, 1px underline | 2px underline | — | — | ring | — |
+| `.btn-primary` | light fill, black text | white | `-active`, translateY(1px) | — | ring | opacity .5 |
+| `.btn-secondary` | transparent, `line-strong` border | `paper-hover` | `paper-active` | — | ring | opacity .5 |
+| `.nav-link` | ink-soft, uppercase | white | — | `aria-current` → ink + 3px red underline | ring | — |
+| `.store-link` | ink-soft (lg: ink) | white | inverse-active | — | ring | `aria-disabled` → "Coming soon", no pointer |
+| `.footer-link` | ink-muted | ink | — | `aria-current` → ink + red underline | ring | — |
+| `.prose a` | game accent, 1px underline | white, 2px underline | — | — | ring | — |
 
-Focus ring is global: `:where(a, button, [tabindex]):focus-visible` → `outline: var(--focus-width) solid var(--game-accent, var(--color-focus))`. Inside dark surfaces add `.on-inverse` (ring → `--color-focus-inverse`); inside brand surfaces add `.on-brand` (ring → `--color-focus-brand`, coral brand-mark square swaps to paper). Never remove outlines.
-
-State-signalling uses ARIA attributes (`aria-current`, `aria-expanded`, `aria-disabled`), not extra classes.
+Focus ring is global: `:where(a, button, summary, [tabindex]):focus-visible` → `var(--game-accent, var(--color-focus))`. Never remove outlines.
 
 ## Motion
 
-`--duration-fast` 120ms (color/underline), `--duration-base` 200ms (fills, transforms), `--ease-out`. Movement ≤ 3px. No looping animation.
+`--duration-fast` 120ms (color/underline), `--duration-base` 200ms (fills, transforms, menu icon), `--ease-out`. Movement ≤ 3px. No looping animation.
 
 ## Component recipes
 
 ```html
 <!-- Buttons -->
-<a class="btn btn-primary" href="#">Explore the game <Icon :icon="arrowRightUp" aria-hidden="true" /></a>
-<button class="btn btn-secondary btn-sm" type="button">Menu</button>
+<a class="btn btn-primary" href="#">Play now</a>
+<button class="btn btn-secondary" type="button">Menu</button>
 
-<!-- Eyebrow + display heading -->
-<p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Sentence case label</p>
-<h2 class="display display-md">Good to know<span>.</span></h2>
+<!-- Label -->
+<p class="eyebrow">Sentence case label</p>
 
-<!-- Masthead tab -->
-<a class="tab-link" href="/x.html" aria-current="page">Privacy policy</a>
+<!-- Store row (Vue) -->
+<StoreLinks :game="game" size="md" />
 ```
 
 Markdown info pages: wrap content in `<div class="prose">`; draft notices are a leading `> **Draft, not for publication.** …` blockquote (renders as callout).
 
-Tailwind utilities are generated only from system tokens (`bg-paper`, `text-ink-soft`, `rounded-md`, `font-serif`, `text-sm`); default Tailwind palettes/radii/fonts are cleared. Avoid class names that collide with Tailwind utilities (e.g. `container`) — use `.layout`.
+Tailwind utilities are generated only from system tokens (`bg-paper`, `text-ink-soft`, `rounded-md`, `text-sm`); default Tailwind palettes/radii/fonts are cleared. Avoid class names that collide with Tailwind utilities (e.g. `container`) — use `.layout`.
 
 ## Checklist before finishing UI work
 
-- [ ] `grep -nE '#[0-9a-fA-F]{3,8}\b|[0-9]+px' .vitepress/theme/style.css` — new hits only inside `.hero-art` or token-justified sizes (icon/art dimensions)
+- [ ] `grep -nE '#[0-9a-fA-F]{3,8}\b|[0-9]+px' .vitepress/theme/style.css` — no new hits or token-justified sizes (icon/art dimensions)
 - [ ] Every new interactive element: hover, active, focus-visible (keyboard Tab through it), disabled if applicable
 - [ ] Contrast checked for any new color pair
 - [ ] Checked at 375px and 1280px; no horizontal scroll

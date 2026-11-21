@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData, withBase } from 'vitepress'
-import type { Game } from '../navigation'
+import { studio, type Game } from '../navigation'
 
 const props = defineProps<{ game?: Game }>()
 
@@ -12,17 +12,21 @@ const isCurrent = (href: string) => page.value.relativePath.replace(/\.md$/, '.h
 </script>
 
 <template>
-  <footer class="pb-(--space-2)">
-    <div class="masthead flex flex-wrap items-center justify-between gap-x-(--space-6) gap-y-(--space-2) border-t border-line py-(--space-6) text-sm leading-snug">
-      <p class="m-0 text-ink-muted">© {{ year }} {{ game?.name ?? 'Inspira Games' }}</p>
-      <nav v-if="links.length" class="flex flex-wrap gap-(--space-6)" aria-label="Footer">
+  <footer class="site-footer">
+    <div class="masthead footer-inner">
+      <p class="footer-copy">© {{ year }} {{ game?.name ?? 'devKixan' }}. All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer">
         <a
           v-for="link in links"
           :key="link.href"
-          class="text-ink-soft underline decoration-transparent underline-offset-(--space-1) transition-colors hover:text-ink hover:decoration-line-strong aria-[current=page]:text-ink aria-[current=page]:decoration-current"
+          class="footer-link"
           :href="withBase(link.href)"
           :aria-current="isCurrent(link.href) ? 'page' : undefined"
         >{{ link.label }}</a>
+        <a class="footer-link footer-youtube" :href="studio.youtube" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8M9.6 15.6V8.4l6.2 3.6z"/></svg>
+          YouTube<span class="sr-only"> (opens in new tab)</span>
+        </a>
       </nav>
     </div>
   </footer>

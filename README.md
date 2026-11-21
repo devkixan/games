@@ -4,6 +4,8 @@ Guest-facing pages for our games.
 
 ## Pages
 
+- [devKixan home](index.md) — `/index.html` (lists every game from `.vitepress/theme/navigation.ts`)
+
 ### Block Stack: Skybound
 
 - [Home](blockstack-skybound/index.md) — `/blockstack-skybound/index.html`
