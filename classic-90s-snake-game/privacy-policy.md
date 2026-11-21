@@ -6,11 +6,11 @@ title: Privacy policy | Classic 90s Snake Game
 
 <div class="prose">
 
-**Last revised:** November 17, 2026
+**Last revised:** November 21, 2026
 
 ## About this policy
 
-This policy explains how Dev Kixan (“we”, “us” or “our”) handles information in Classic 90s Snake Game (the “game”) and when you contact us about it. It covers the mobile app and the browser version where available. Features can differ by platform and release configuration.
+This policy explains how Kixan (“we”, “us” or “our”) handles information in Classic 90s Snake Game (the “game”) and when you contact us about it. It covers the mobile app and the browser version where available. Features can differ by platform and release configuration.
 
 You do not need an account for local play. Optional Rank Mode in supported mobile versions requires sign-in to Apple Game Center or Google Play Games. The game does not ask for your name, email address, phone number, precise location or payment details to play. You can play offline, although advertising, Rank Mode and some other services need an internet connection.
 

@@ -185,7 +185,7 @@ a.store-link:active { color: var(--color-inverse-active); }
 }
 .page-hero-home { padding-block: var(--space-16) var(--space-12); }
 .page-hero-home .hero-title { font-size: var(--text-display-xl); }
-/* Keep the studio name's own casing: devKixan. */
+/* Keep the studio username's own casing: @devKixan. */
 .wordmark span { text-transform: none; }
 .hero-lead {
   max-width: 36rem;

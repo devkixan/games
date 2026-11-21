@@ -19,7 +19,7 @@ export interface Game {
   /** Giant hero title colour. Large display only: must reach 3:1 on #000000. */
   titleColor?: string
   logo?: string
-  /** One line shown on the devKixan home page. */
+  /** One line shown on the Kixan home page. */
   tagline?: string
   homeHref?: string
   downloads?: { appStore?: string; googlePlay?: string }
@@ -46,8 +46,9 @@ function readLinks(files: Record<string, string>, path: string): NavLink[] | und
 
 /** Studio-wide links, shown on the home page and in every footer. */
 export const studio = {
-  name: 'devKixan',
-  youtube: 'https://www.youtube.com/@devkixan',
+  name: 'Kixan',
+  username: '@devKixan',
+  youtube: 'https://www.youtube.com/@devKixan',
 }
 
 export const games: Game[] = [

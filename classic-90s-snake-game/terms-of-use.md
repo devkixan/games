@@ -6,11 +6,11 @@ title: Terms of use | Classic 90s Snake Game
 
 <div class="prose">
 
-**Last revised:** November 17, 2026
+**Last revised:** November 21, 2026
 
 ## About these terms
 
-These terms govern your use of Classic 90s Snake Game (the “game”), provided by Dev Kixan (“we”, “us” or “our”). They apply to the mobile app and the browser version where available. By using the game, you agree to these terms. If you do not agree, please do not use it. Any terms from the store where you obtained the game also apply where relevant.
+These terms govern your use of Classic 90s Snake Game (the “game”), provided by Kixan (“we”, “us” or “our”). They apply to the mobile app and the browser version where available. By using the game, you agree to these terms. If you do not agree, please do not use it. Any terms from the store where you obtained the game also apply where relevant.
 
 The game is intended for players aged 13 and over. If you are under the age of majority where you live, ask a parent or guardian for permission to play where required.
 

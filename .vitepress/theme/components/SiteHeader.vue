@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { useData, withBase } from 'vitepress'
-import { games, type Game } from '../navigation'
+import { games, studio, type Game } from '../navigation'
 import StoreLinks from './StoreLinks.vue'
 
 const props = defineProps<{ game?: Game }>()
 const { page } = useData()
 // Studio pages (no game) link to each game's home.
 const links = computed(() => props.game?.links ?? games.map((g) => ({ label: g.name, href: g.homeHref ?? `${g.prefix}index.html` })))
-const homeLabel = computed(() => (props.game ? `${props.game.name} home` : 'devKixan home'))
+const homeLabel = computed(() => (props.game ? `${props.game.name} home` : `${studio.username} home`))
 const homeHref = computed(() => (props.game?.homeHref ?? '/index.html'))
 const menu = ref<HTMLDetailsElement>()
 // Close the mobile menu after client-side navigation.
@@ -21,7 +21,7 @@ const isCurrent = (href: string) => page.value.relativePath.replace(/\.md$/, '.h
     <div class="masthead masthead-bar">
       <a class="wordmark" :href="withBase(homeHref)" :aria-label="homeLabel">
         <img v-if="game?.logo" class="wordmark-logo" :src="game.logo" alt="" />
-        <span v-else aria-hidden="true">devKixan</span>
+        <span v-else aria-hidden="true">{{ studio.username }}</span>
       </a>
 
       <nav class="top-nav" :aria-label="game ? `${game.name} pages` : 'Main navigation'">

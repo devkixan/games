@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  title: 'devKixan',
-  description: 'Small games by devKixan.',
+  title: 'Kixan',
+  description: 'Small games by Kixan.',
   base: process.env.SITE_BASE || '/',
   cleanUrls: false,
   srcExclude: ['README.md', '**/navigations.md', '**/footer.md'],

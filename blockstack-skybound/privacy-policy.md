@@ -7,11 +7,11 @@ title: "Privacy policy | Block Stack: Skybound"
 <div class="prose">
 
 **Effective date:** November 10, 2026  
-**Last updated:** November 12, 2026
+**Last updated:** November 21, 2026
 
 ## About this policy
 
-This policy explains how Dev Kixan, the developer of Block Stack: Skybound ("we", "us" or "our"), handles information when you play the game or contact us. You can reach us through our [contact page](contact.html).
+This policy explains how Kixan, the developer of Block Stack: Skybound ("we", "us" or "our"), handles information when you play the game or contact us. You can reach us through our [contact page](contact.html).
 
 ## Information stored on your device
 

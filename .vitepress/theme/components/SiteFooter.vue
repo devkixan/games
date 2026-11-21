@@ -14,7 +14,7 @@ const isCurrent = (href: string) => page.value.relativePath.replace(/\.md$/, '.h
 <template>
   <footer class="site-footer">
     <div class="masthead footer-inner">
-      <p class="footer-copy">© {{ year }} {{ game?.name ?? 'devKixan' }}. All rights reserved.</p>
+      <p class="footer-copy">© {{ year }} {{ game?.name ?? studio.name }}. All rights reserved.</p>
       <nav class="footer-links" aria-label="Footer">
         <a
           v-for="link in links"
