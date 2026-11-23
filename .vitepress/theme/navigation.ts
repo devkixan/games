@@ -56,8 +56,8 @@ export const games: Game[] = [
   {
     name: 'Paper Boat: River Rush',
     prefix: '/paper-boat/',
-    accentColor: '#bedeef',
-    titleColor: '#bedeef',
+    accentColor: '#79aee0',
+    titleColor: '#4f86b8',
     logo: paperBoatLogo,
     tagline: 'A little paper boat. An endless river. How far will you go?',
     homeHref: '/paper-boat/index.html',
@@ -78,8 +78,8 @@ export const games: Game[] = [
   {
     name: 'Block Stack: Skybound',
     prefix: '/blockstack-skybound/',
-    accentColor: '#79aee0',
-    titleColor: '#4f86b8',
+    accentColor: '#d9825e',
+    titleColor: '#91340f',
     logo: blockStackLogo,
     tagline: 'One tap. One block. Build your tower skyward.',
     homeHref: '/blockstack-skybound/index.html',
