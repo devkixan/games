@@ -13,11 +13,13 @@ import StoreLinks from './StoreLinks.vue'
       :style="{ '--game-title': game.titleColor, '--game-accent': game.accentColor }"
     >
       <img v-if="game.logo" class="game-card-logo" :src="game.logo" alt="" />
-      <h2 class="game-card-name">
-        <!-- Stretched link: tapping anywhere on the card (except the store buttons) opens the game page. -->
-        <a class="game-card-link" :href="withBase(game.homeHref ?? `${game.prefix}index.html`)">{{ game.name }}</a>
-      </h2>
-      <p v-if="game.tagline" class="game-card-tagline">{{ game.tagline }}</p>
+      <div class="game-card-details">
+        <h2 class="game-card-name">
+          <!-- Stretched link: tapping anywhere on the card (except the store buttons) opens the game page. -->
+          <a class="game-card-link" :href="withBase(game.homeHref ?? `${game.prefix}index.html`)">{{ game.name }}</a>
+        </h2>
+        <p v-if="game.tagline" class="game-card-tagline">{{ game.tagline }}</p>
+      </div>
       <StoreLinks class="game-card-stores" :game="game" size="md" />
     </article>
   </section>
