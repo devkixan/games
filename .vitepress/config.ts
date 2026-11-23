@@ -74,7 +74,7 @@ export default defineConfig({
     }
   },
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', sizes: 'any', href: `${process.env.SITE_BASE || '/'}kixan-logo.svg` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '250x250', href: `${process.env.SITE_BASE || '/'}favicon.png` }],
     ['meta', { name: 'theme-color', content: '#000000' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
