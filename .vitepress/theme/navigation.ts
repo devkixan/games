@@ -23,6 +23,11 @@ export interface Game {
   /** One line shown on the Kixan home page. */
   tagline?: string
   homeHref?: string
+  /** Placeholder artwork for games without a YouTube background. */
+  heroImage?: string
+  trailerVideoId?: string
+  /** Source video width / height, used to cover the hero without letterboxing. */
+  trailerAspectRatio?: number
   downloads?: { appStore?: string; googlePlay?: string }
   links: NavLink[]
   footerLinks?: NavLink[]
@@ -61,6 +66,7 @@ export const games: Game[] = [
     logo: paperBoatLogo,
     tagline: 'A little paper boat. An endless river. How far will you go?',
     homeHref: '/paper-boat/index.html',
+    heroImage: '/paper-boat/blog/getting-started.png',
     links: readLinks(navigationFiles, '/paper-boat/navigations.md') ?? [],
     footerLinks: readLinks(footerFiles, '/paper-boat/footer.md'),
   },
@@ -72,6 +78,7 @@ export const games: Game[] = [
     logo: snakeLogo,
     tagline: 'The classic 90s snake, back for another round.',
     homeHref: '/classic-90s-snake-game/index.html',
+    trailerVideoId: 'yqsold2lR20',
     links: readLinks(navigationFiles, '/classic-90s-snake-game/navigations.md') ?? [],
     footerLinks: readLinks(footerFiles, '/classic-90s-snake-game/footer.md'),
   },
@@ -83,6 +90,7 @@ export const games: Game[] = [
     logo: blockStackLogo,
     tagline: 'One tap. One block. Build your tower skyward.',
     homeHref: '/blockstack-skybound/index.html',
+    heroImage: '/blockstack-skybound/blog/getting-started.png',
     links: readLinks(navigationFiles, '/blockstack-skybound/navigations.md') ?? [],
     footerLinks: readLinks(footerFiles, '/blockstack-skybound/footer.md'),
   },

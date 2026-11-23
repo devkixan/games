@@ -4,6 +4,7 @@ import { useData } from 'vitepress'
 import SiteHeader from './components/SiteHeader.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import BlogRelatedPosts from './components/blog/BlogRelatedPosts.vue'
+import GameHomeHero from './components/GameHomeHero.vue'
 import { games, studio } from './navigation'
 
 const { page, frontmatter } = useData()
@@ -40,11 +41,19 @@ const themeStyle = computed(() => (game.value ? {
     </main>
     <SiteFooter />
   </div>
-  <div v-else class="site" :style="themeStyle">
+  <div v-else class="site" :class="{ 'game-home-site': isHome && game }" :style="themeStyle">
     <a class="skip-link btn btn-primary" href="#main-content">Skip to content</a>
     <SiteHeader :game="game" />
     <main id="main-content" class="site-main">
-      <section v-if="!frontmatter.hidePageIntro" class="page-hero" :class="{ 'page-hero-home': isHome }">
+      <GameHomeHero
+        v-if="isHome && game && !frontmatter.hidePageIntro"
+        :key="game.prefix"
+        :game="game"
+        :title="title"
+        :description="frontmatter.description"
+        :kicker="frontmatter.kicker"
+      />
+      <section v-else-if="!frontmatter.hidePageIntro" class="page-hero">
         <div class="masthead hero-inner">
           <p v-if="frontmatter.kicker" class="hero-kicker">{{ frontmatter.kicker }}</p>
           <h1 class="hero-title">{{ title }}</h1>

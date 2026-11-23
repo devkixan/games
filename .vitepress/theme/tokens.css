@@ -35,6 +35,7 @@
   --color-on-inverse: #000000;
   --color-on-inverse-muted: #3d4142;
   --color-overlay: rgb(0 0 0 / 0.7); /* modal backdrop */
+  --color-hero-shade: rgb(0 0 0 / 0.8); /* readability over hero artwork */
 
   /* ---- Color: accent ---- */
   --color-accent: #8e1d1d;         /* blood red — decorative only (rules, marks), fails text contrast */
@@ -123,6 +124,11 @@
   --layout-prose: 900px;
   --gutter: clamp(16px, 4vw, 48px);
   --header-height: 80px;     /* masthead bar, including vertical padding */
+  --header-height-compact: 64px;
+  --game-hero-height: 640px;
+  --game-hero-height-mobile: 580px;
+  --game-hero-blur-soft: 8px;
+  --game-hero-blur-strong: 20px;
   --masthead-max: var(--layout-prose); /* masthead + menu panel share the reading column */
   --mark-block: 10px;        /* brand-mark square */
 

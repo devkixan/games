@@ -37,8 +37,19 @@ Guest-facing pages for our games, hosted at [devkixan.com](https://devkixan.com/
 
 Add new guest-facing pages and their routes to this list when they are created.
 
-Game headers show Home, Contact and Blog. Privacy policy and terms of use remain
-in each game's footer. Each blog is a static Markdown listing (`<game>/blog.md`)
+Game headers show Home, Blog and Contact. Privacy policy and terms of use remain
+in each game's footer. Every game home has a full-width, viewport-filling artwork
+hero, progressive blur toward the bottom-left, compact top navigation, store
+placeholders and a Trailer control. Set `heroImage` and optional `trailerVideoId`
+in `.vitepress/theme/navigation.ts`; games without a video show “Trailer coming
+soon.” Snake uses YouTube video `yqsold2lR20` as a muted, looping background;
+`trailerAspectRatio` controls how the video fills the hero. A small Pause video /
+Play video control pauses and resumes the same YouTube player in place. Video
+backgrounds have no fallback image; `heroImage` is used only for games without
+a video. Visitors who prefer reduced motion start with autoplay off. The separate
+trailer dialog plays with sound and stops when closed.
+
+Each blog is a static Markdown listing (`<game>/blog.md`)
 with articles in `<game>/blog/`. The listing builds cards from article frontmatter
 at build time. Add a Markdown article with `blog: true`, `pageTitle`, `description`,
 `date` (quoted ISO date), `author`, `image`, `imageAlt`, `imageWidth`, `imageHeight`

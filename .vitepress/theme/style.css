@@ -26,6 +26,7 @@ html {
 }
 html:has(dialog[open]) { overflow: hidden; }
 body { margin: 0; padding-top: var(--header-height); background: var(--color-paper); }
+body:has(.game-home-site) { --header-height: var(--header-height-compact); }
 p, .prose { font-weight: var(--font-weight-light); }
 ::selection { background: var(--color-accent); color: var(--color-ink); }
 
@@ -33,12 +34,14 @@ p, .prose { font-weight: var(--font-weight-light); }
 :where(a, button, summary, [tabindex]):focus-visible {
   outline: var(--focus-width) solid var(--game-accent, var(--color-focus));
   outline-offset: var(--focus-offset);
-  border-radius: var(--radius-xs);
 }
 
 .masthead { width: min(var(--masthead-max), calc(100% - 2 * var(--gutter))); margin-inline: auto; }
 .layout { width: min(var(--layout-max), calc(100% - 2 * var(--gutter))); margin-inline: auto; }
 .layout-prose { max-width: var(--layout-prose); }
+
+/* Bordered panels share the same corners as the site's controls. */
+:where(.game-card, .blog-card, .contact-card) { border-radius: var(--radius-lg); }
 
 .skip-link {
   position: fixed; left: var(--space-3); top: var(--space-3); z-index: 50;
@@ -118,6 +121,8 @@ p, .prose { font-weight: var(--font-weight-light); }
 }
 .wordmark:hover { opacity: 1; }
 .wordmark-logo { display: block; width: auto; height: var(--space-10); }
+.game-home-site .masthead-bar { padding-block: var(--space-3); }
+.game-home-site .wordmark-logo { height: var(--space-8); }
 
 /* Nav link — states: default / hover / current / focus-visible */
 .top-nav { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-5); flex: 1; }
