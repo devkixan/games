@@ -34,6 +34,7 @@ jobs:
         run: npm run build
         env:
           SITE_BASE: ${{ steps.pages.outputs.base_path }}/
+          SITE_URL: ${{ steps.pages.outputs.base_url }}/
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:

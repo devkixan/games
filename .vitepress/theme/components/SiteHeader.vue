@@ -11,7 +11,13 @@ const links = computed(() => props.game?.links ?? games.map((g) => ({ label: g.n
 const menu = ref<HTMLDetailsElement>()
 // Close the mobile menu after client-side navigation.
 watch(() => page.value.relativePath, () => { if (menu.value) menu.value.open = false })
-const isCurrent = (href: string) => page.value.relativePath.replace(/\.md$/, '.html') === href.slice(1)
+function currentPage(href: string): 'page' | 'location' | undefined {
+  const path = page.value.relativePath.replace(/\.md$/, '.html')
+  const target = href.slice(1)
+  if (path === target) return 'page'
+  if (target.endsWith('/blog.html') && path.startsWith(target.replace(/\.html$/, '/'))) return 'location'
+  return undefined
+}
 </script>
 
 <template>
@@ -31,7 +37,7 @@ const isCurrent = (href: string) => page.value.relativePath.replace(/\.md$/, '.h
       </div>
 
       <nav class="top-nav" :aria-label="game ? `${game.name} pages` : 'Main navigation'">
-        <a v-for="link in links" :key="link.href" class="nav-link" :href="withBase(link.href)" :aria-current="isCurrent(link.href) ? 'page' : undefined">{{ link.label }}</a>
+        <a v-for="link in links" :key="link.href" class="nav-link" :href="withBase(link.href)" :aria-current="currentPage(link.href)">{{ link.label }}</a>
       </nav>
 
       <StoreLinks class="header-stores" :game="game" size="sm" />
@@ -39,7 +45,7 @@ const isCurrent = (href: string) => page.value.relativePath.replace(/\.md$/, '.h
       <details ref="menu" class="mobile-nav">
         <summary aria-label="Menu"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span></summary>
         <nav :aria-label="game ? `${game.name} pages` : 'Main navigation'">
-          <a v-for="link in links" :key="link.href" class="nav-link" :href="withBase(link.href)" :aria-current="isCurrent(link.href) ? 'page' : undefined">{{ link.label }}</a>
+          <a v-for="link in links" :key="link.href" class="nav-link" :href="withBase(link.href)" :aria-current="currentPage(link.href)">{{ link.label }}</a>
           <StoreLinks :game="game" size="sm" />
         </nav>
       </details>
