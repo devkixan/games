@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 import SiteHeader from './components/SiteHeader.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import BlogRelatedPosts from './components/blog/BlogRelatedPosts.vue'
@@ -10,7 +10,7 @@ import { games, studio } from './navigation'
 const { page, frontmatter } = useData()
 const game = computed(() => games.find((item) => page.value.relativePath.startsWith(item.prefix.slice(1))))
 const isHome = computed(() => page.value.relativePath.endsWith('index.md'))
-// Studio landing (root index): no header, centered name + games.
+// Studio landing (root index): no header, centered logo, name and games.
 const isStudioHome = computed(() => isHome.value && !game.value)
 const title = computed(() => frontmatter.value.pageTitle || page.value.title)
 const themeStyle = computed(() => (game.value ? {
@@ -30,6 +30,7 @@ const themeStyle = computed(() => (game.value ? {
   <div v-else-if="isStudioHome" class="site studio-site">
     <main id="main-content" class="studio-home">
       <div class="studio-inner">
+        <img class="studio-logo" :src="withBase(studio.logo)" alt="" width="90" height="135" />
         <h1 class="studio-title">{{ title }}</h1>
         <p v-if="frontmatter.description" class="studio-sub">{{ frontmatter.description }}</p>
         <a class="studio-youtube" :href="studio.youtube" target="_blank" rel="noopener">

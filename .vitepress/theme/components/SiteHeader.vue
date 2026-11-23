@@ -25,7 +25,7 @@ function currentPage(href: string): 'page' | 'location' | undefined {
     <div class="masthead masthead-bar">
       <div class="header-brands">
         <a class="wordmark" :href="withBase('/index.html')" :aria-label="`${studio.name} home`">
-          <img class="wordmark-logo" :src="withBase('/favicon.png')" alt="" width="40" height="40" />
+          <img class="wordmark-logo" :src="withBase(studio.logo)" alt="" width="90" height="135" />
         </a>
         <template v-if="game">
           <span class="header-brand-divider" aria-hidden="true"></span>

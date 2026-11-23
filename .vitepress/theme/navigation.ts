@@ -53,6 +53,7 @@ function readLinks(files: Record<string, string>, path: string): NavLink[] | und
 /** Studio-wide links, shown on the home page and in every footer. */
 export const studio = {
   name: 'Kixan',
+  logo: '/kixan-logo.svg',
   username: '@devKixan',
   youtube: 'https://www.youtube.com/@devKixan',
 }
