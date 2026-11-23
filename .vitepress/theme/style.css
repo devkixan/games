@@ -99,8 +99,12 @@ p, .prose { font-weight: var(--font-weight-light); }
 }
 .masthead-bar {
   display: flex; align-items: center; gap: var(--space-6);
+  box-sizing: border-box;
   min-height: var(--header-height);
+  padding-block: var(--space-4);
 }
+.header-brands { display: flex; align-items: center; flex: none; gap: var(--space-4); }
+.header-brand-divider { width: var(--rule-width); height: var(--space-6); background: var(--color-line-strong); }
 .wordmark {
   display: inline-flex; align-items: center; flex: none;
   color: var(--color-ink);
