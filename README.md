@@ -39,7 +39,7 @@ Add new guest-facing pages and their routes to this list when they are created.
 
 Game headers show Home, Blog and Contact. Privacy policy and terms of use remain
 in each game's footer. Every game home has a full-width, viewport-filling artwork
-hero, progressive blur toward the bottom-left, compact top navigation, store
+hero, progressive blur toward the bottom-left, consistent top navigation, store
 placeholders and a Trailer control. Set `heroImage` and optional `trailerVideoId`
 in `.vitepress/theme/navigation.ts`; games without a video show “Trailer coming
 soon.” Snake uses YouTube video `yqsold2lR20` as a muted, looping background;

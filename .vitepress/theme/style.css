@@ -22,11 +22,12 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  /* Keep centered content in place when page length or dialog scroll locks change. */
+  scrollbar-gutter: stable;
   scroll-padding-top: calc(var(--header-height) + var(--space-8));
 }
 html:has(dialog[open]) { overflow: hidden; }
 body { margin: 0; padding-top: var(--header-height); background: var(--color-paper); }
-body:has(.game-home-site) { --header-height: var(--header-height-compact); }
 p, .prose { font-weight: var(--font-weight-light); }
 ::selection { background: var(--color-accent); color: var(--color-ink); }
 
@@ -121,8 +122,6 @@ p, .prose { font-weight: var(--font-weight-light); }
 }
 .wordmark:hover { opacity: 1; }
 .wordmark-logo { display: block; width: auto; height: var(--space-10); }
-.game-home-site .masthead-bar { padding-block: var(--space-3); }
-.game-home-site .wordmark-logo { height: var(--space-8); }
 
 /* Nav link — states: default / hover / current / focus-visible */
 .top-nav { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-5); flex: 1; }

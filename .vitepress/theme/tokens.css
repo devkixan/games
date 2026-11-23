@@ -124,7 +124,6 @@
   --layout-prose: 900px;
   --gutter: clamp(16px, 4vw, 48px);
   --header-height: 80px;     /* masthead bar, including vertical padding */
-  --header-height-compact: 64px;
   --game-hero-height: 640px;
   --game-hero-height-mobile: 580px;
   --game-hero-blur-soft: 8px;

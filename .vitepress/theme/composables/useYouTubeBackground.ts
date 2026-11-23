@@ -26,26 +26,44 @@ declare global {
 }
 
 let playerApiReady: Promise<PlayerConstructor> | undefined
+const PLAYER_LOAD_TIMEOUT_MS = 15_000
 
 function loadPlayerApi(): Promise<PlayerConstructor> {
   if (window.YT?.Player) return Promise.resolve(window.YT.Player)
   if (playerApiReady) return playerApiReady
 
-  playerApiReady = new Promise((resolve, reject) => {
+  playerApiReady = new Promise<PlayerConstructor>((resolve, reject) => {
     const previousReady = window.onYouTubeIframeAPIReady
-    window.onYouTubeIframeAPIReady = () => {
-      if (window.YT?.Player) resolve(window.YT.Player)
-      previousReady?.()
-    }
-
     const script = document.createElement('script')
     script.src = 'https://www.youtube.com/iframe_api'
     script.async = true
-    script.addEventListener('error', () => {
-      playerApiReady = undefined
+
+    function cleanup() {
+      clearTimeout(timeout)
+      script.removeEventListener('error', fail)
+      if (window.onYouTubeIframeAPIReady === ready) {
+        window.onYouTubeIframeAPIReady = previousReady
+      }
+    }
+    function fail() {
+      cleanup()
+      script.remove()
       reject(new Error('YouTube player API could not load'))
-    }, { once: true })
+    }
+    function ready() {
+      if (!window.YT?.Player) return
+      cleanup()
+      resolve(window.YT.Player)
+      previousReady?.()
+    }
+
+    const timeout = setTimeout(fail, PLAYER_LOAD_TIMEOUT_MS)
+    window.onYouTubeIframeAPIReady = ready
+    script.addEventListener('error', fail, { once: true })
     document.head.append(script)
+  }).catch((error) => {
+    playerApiReady = undefined
+    throw error
   })
   return playerApiReady
 }
@@ -58,11 +76,18 @@ export function useYouTubeBackground(videoId: string | undefined, iframe: Readon
   const hasPlayerError = shallowRef(false)
   let player: YouTubePlayer | undefined
   let disposed = false
+  let readyTimeout: ReturnType<typeof setTimeout> | undefined
 
   function handlePlayerError() {
+    if (disposed) return
+    clearTimeout(readyTimeout)
     hasPlayerError.value = true
     isVideoPlaying.value = false
     isPlayerReady.value = false
+    // Stop an autoplaying embed when its controls cannot be connected.
+    videoUrl.value = undefined
+    player?.destroy()
+    player = undefined
   }
 
   onMounted(async () => {
@@ -76,22 +101,29 @@ export function useYouTubeBackground(videoId: string | undefined, iframe: Readon
     })
     videoUrl.value = `https://www.youtube-nocookie.com/embed/${videoId}?${params}`
     await nextTick()
+    if (disposed) return
 
     try {
       const Player = await loadPlayerApi()
       if (disposed || !iframe.value) return
+      readyTimeout = setTimeout(handlePlayerError, PLAYER_LOAD_TIMEOUT_MS)
       player = new Player(iframe.value, {
         events: {
           onReady: ({ target }) => {
+            if (disposed || hasPlayerError.value) return
+            clearTimeout(readyTimeout)
             isPlayerReady.value = true
             target.mute()
             if (autoplay) target.playVideo()
           },
           onStateChange: ({ data }) => {
+            if (disposed || hasPlayerError.value) return
             if (data === 1 || data === 3) isVideoPlaying.value = true
             else if (data === 0 || data === 2 || data === 5) isVideoPlaying.value = false
           },
-          onAutoplayBlocked: () => { isVideoPlaying.value = false },
+          onAutoplayBlocked: () => {
+            if (!disposed) isVideoPlaying.value = false
+          },
           onError: handlePlayerError,
         },
       })
@@ -108,6 +140,7 @@ export function useYouTubeBackground(videoId: string | undefined, iframe: Readon
 
   onBeforeUnmount(() => {
     disposed = true
+    clearTimeout(readyTimeout)
     player?.destroy()
   })
 

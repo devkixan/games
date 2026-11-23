@@ -41,7 +41,7 @@ const themeStyle = computed(() => (game.value ? {
     </main>
     <SiteFooter />
   </div>
-  <div v-else class="site" :class="{ 'game-home-site': isHome && game }" :style="themeStyle">
+  <div v-else class="site" :style="themeStyle">
     <a class="skip-link btn btn-primary" href="#main-content">Skip to content</a>
     <SiteHeader :game="game" />
     <main id="main-content" class="site-main">

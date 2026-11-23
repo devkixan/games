@@ -66,7 +66,7 @@ Square look: `--radius-xs`/`-sm` 0, `--radius-md`/`-lg` 2px, `--radius-full` for
 ## Layout
 
 - `.masthead` = centered `--masthead-max` (900px) column, shared by header, hero, content and footer.
-- Header: fixed black bar (`--header-height` 56px): logo · uppercase nav links · compact store links (hidden < 800px). Under 700px the links move into a hamburger `<details class="mobile-nav">` full-screen black panel with large links.
+- Header: fixed black bar (`--header-height` 80px) with 40px logos and 16px vertical padding on every game page: logo · uppercase nav links · compact store links (hidden < 800px). Keep its sizing consistent between home and content pages. Under 700px the links move into a hamburger `<details class="mobile-nav">` full-screen black panel with large links. Reserve the root scrollbar gutter so page length and dialog scroll locks do not shift centered content.
 - Every page with an intro gets `.page-hero` (plain black, no background effects; kicker, giant uppercase title, description). Game home pages (`index.md`) get the giant `display-xl` title; store links live in the header and on the home-page game cards (`StoreLinks size="md"`, "Coming soon" when no URL). `hidePageIntro: true` skips the hero (contact pages).
 - Footer: hairline-topped row — "© year Game. All rights reserved." left, uppercase links right.
 - Breakpoints: 800px, 700px. Touch targets ≥ `--control-height` 44px (`-sm` 40px for nav).

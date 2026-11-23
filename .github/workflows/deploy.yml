@@ -30,6 +30,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci
+      - name: Test video lifecycle
+        run: npm test
       - name: Build site
         run: npm run build
         env:
