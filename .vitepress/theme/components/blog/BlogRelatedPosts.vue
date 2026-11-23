@@ -6,8 +6,9 @@ import BlogCard from './BlogCard.vue'
 
 const { page } = useData()
 const relatedPosts = computed(() => {
+  const prefix = `/${page.value.relativePath.split('/')[0]}/blog/`
   const currentUrl = `/${page.value.relativePath.replace(/\.md$/, '.html')}`
-  return posts.filter((post) => post.url !== currentUrl).slice(0, 2)
+  return posts.filter((post) => post.url.startsWith(prefix) && post.url !== currentUrl).slice(0, 2)
 })
 </script>
 
