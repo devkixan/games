@@ -2,7 +2,9 @@
 import { withBase } from 'vitepress'
 import { formatBlogDate, type BlogPost } from '../../../blog'
 
-defineProps<{ post: BlogPost }>()
+withDefaults(defineProps<{ post: BlogPost; headingTag?: 'h2' | 'h3' }>(), {
+  headingTag: 'h2',
+})
 </script>
 
 <template>
@@ -13,7 +15,7 @@ defineProps<{ post: BlogPost }>()
     </figure>
     <div class="blog-card-content">
       <p class="blog-meta"><time :datetime="post.date">{{ formatBlogDate(post.date) }}</time> · {{ post.author }}</p>
-      <h2 class="blog-card-title"><a class="blog-card-link" :href="withBase(post.url)">{{ post.title }}</a></h2>
+      <component :is="headingTag" class="blog-card-title"><a class="blog-card-link" :href="withBase(post.url)">{{ post.title }}</a></component>
       <p class="blog-card-description">{{ post.description }}</p>
       <span class="blog-card-cta" aria-hidden="true">Read article</span>
     </div>

@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useData } from 'vitepress'
 import SiteHeader from './components/SiteHeader.vue'
 import SiteFooter from './components/SiteFooter.vue'
+import BlogRelatedPosts from './components/blog/BlogRelatedPosts.vue'
 import { games, studio } from './navigation'
 
 const { page, frontmatter } = useData()
@@ -53,6 +54,7 @@ const themeStyle = computed(() => (game.value ? {
 
       <div class="masthead page-content" :class="{ 'page-content-flush': frontmatter.hidePageIntro }">
         <Content />
+        <BlogRelatedPosts v-if="frontmatter.blog" />
       </div>
     </main>
     <SiteFooter :game="game" />
