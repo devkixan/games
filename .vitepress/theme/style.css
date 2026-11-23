@@ -244,7 +244,7 @@ body:has(.studio-site) { padding-top: 0; }
 .studio-home { position: relative; overflow: hidden; display: grid; place-items: center; min-height: 85dvh; padding-block: var(--space-20) var(--space-16); }
 .studio-inner { position: relative; width: min(var(--masthead-max), calc(100% - 2 * var(--gutter))); text-align: center; }
 .studio-logo { display: block; width: auto; height: var(--space-24); margin: 0 auto var(--space-6); }
-.studio-title { margin: 0; color: var(--color-title); font-size: var(--text-display-lg); font-weight: var(--font-weight-regular); line-height: var(--leading-display); letter-spacing: var(--tracking-display); }
+.studio-brand { margin: 0; }
 .studio-sub { max-width: 32rem; margin: var(--space-4) auto 0; color: var(--color-ink-soft); font-size: var(--text-lg); line-height: var(--leading-snug); letter-spacing: var(--tracking-caps); text-wrap: balance; }
 .studio-site .footer-inner { justify-content: center; }
 /* YouTube link — states: default / hover / active / focus-visible */

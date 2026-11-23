@@ -10,7 +10,7 @@ import { games, studio } from './navigation'
 const { page, frontmatter } = useData()
 const game = computed(() => games.find((item) => page.value.relativePath.startsWith(item.prefix.slice(1))))
 const isHome = computed(() => page.value.relativePath.endsWith('index.md'))
-// Studio landing (root index): no header, centered logo, name and games.
+// Studio landing (root index): no header, centered logo and games.
 const isStudioHome = computed(() => isHome.value && !game.value)
 const title = computed(() => frontmatter.value.pageTitle || page.value.title)
 const themeStyle = computed(() => (game.value ? {
@@ -30,8 +30,9 @@ const themeStyle = computed(() => (game.value ? {
   <div v-else-if="isStudioHome" class="site studio-site">
     <main id="main-content" class="studio-home">
       <div class="studio-inner">
-        <img class="studio-logo" :src="withBase(studio.logo)" alt="" width="90" height="135" />
-        <h1 class="studio-title">{{ title }}</h1>
+        <h1 class="studio-brand">
+          <img class="studio-logo" :src="withBase(studio.logo)" :alt="title" width="90" height="135" />
+        </h1>
         <p v-if="frontmatter.description" class="studio-sub">{{ frontmatter.description }}</p>
         <a class="studio-youtube" :href="studio.youtube" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8M9.6 15.6V8.4l6.2 3.6z"/></svg>
