@@ -1,6 +1,7 @@
 import type { IconifyIcon } from '@iconify/vue'
 import blockStackLogo from './assets/block-stack-logo-light.svg'
 import snakeLogo from './assets/snake-logo-light.svg'
+import paperBoatLogo from './assets/paper-boat-logo-light.svg'
 
 export interface NavLink {
   label: string
@@ -52,6 +53,17 @@ export const studio = {
 }
 
 export const games: Game[] = [
+  {
+    name: 'Paper Boat: River Rush',
+    prefix: '/paper-boat/',
+    accentColor: '#bedeef',
+    titleColor: '#bedeef',
+    logo: paperBoatLogo,
+    tagline: 'A little paper boat. An endless river. How far will you go?',
+    homeHref: '/paper-boat/index.html',
+    links: readLinks(navigationFiles, '/paper-boat/navigations.md') ?? [],
+    footerLinks: readLinks(footerFiles, '/paper-boat/footer.md'),
+  },
   {
     name: 'Classic 90s Snake Game',
     prefix: '/classic-90s-snake-game/',
