@@ -14,7 +14,11 @@ Make the boat your own with different papers, patterns and flags. Spend your ear
 
 ## Your progress
 
-Your progress and settings are saved on your device. Clearing game data, uninstalling the game or changing devices may erase them, and we cannot restore lost progress. Apple Game Center and Google Play Games keep submitted leaderboard records separately; those records do not back up your coins, rubies or collection.
+Your progress and settings are saved on your device. Clearing game data, uninstalling the game or changing devices may erase them, and we cannot restore lost progress.
+
+## Ads
+
+The mobile game shows a banner on the home and results screens, an occasional full-screen ad between runs, and optional rewarded ads that earn rubies. Where required, you can review your ad privacy choices in the game's settings. The browser version does not show ads.
 
 ## Need help?
 

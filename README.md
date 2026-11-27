@@ -62,12 +62,13 @@ sets it from the GitHub Pages URL. `SITE_BASE` controls the path used by local
 links and assets. All article content and card links are rendered in static HTML.
 
 Paper Boat's pages describe the publisher-confirmed worldwide release for players
-aged 13 and over: AdMob banner, interstitial and rewarded ads with consent and
-privacy choices; Apple/Google leaderboards; no game accounts, real-money purchases,
-or separate analytics/crash reporting; local progress without developer backup;
-and indefinite support-message retention, subject to deletion requests and law.
-The app source reviewed on November 23, 2026 did not yet include live advertising
-or leaderboard integrations. Before publishing these pages, verify the release
+aged 13 and over: AdMob banner (home and results screens), between-run
+interstitial and rewarded ads with UMP consent and in-game Ad privacy choices; no
+leaderboards (ranked mode was retired), game accounts, real-money purchases, App
+Tracking Transparency prompt, or separate analytics/crash reporting; local progress
+without developer backup; and indefinite support-message retention, subject to
+deletion requests and law. Pages were checked against the app source (including
+its staged AdMob integration) on November 24, 2026. Before publishing, verify the release
 build, SDKs and any mediation partners, consent controls, platform disclosures,
 and delivery of support/privacy requests through the supplied form against them.
 
