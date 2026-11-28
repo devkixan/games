@@ -91,7 +91,7 @@ export const games: Game[] = [
     logo: blockStackLogo,
     tagline: 'One tap. One block. Build your tower skyward.',
     homeHref: '/blockstack-skybound/index.html',
-    heroImage: '/blockstack-skybound/blog/getting-started.png',
+    trailerVideoId: '3Fbx3F3CrbI',
     downloads: { googlePlay: 'https://play.google.com/store/apps/details?id=blockstack.skybound&hl=en' },
     links: readLinks(navigationFiles, '/blockstack-skybound/navigations.md') ?? [],
     footerLinks: readLinks(footerFiles, '/blockstack-skybound/footer.md'),
